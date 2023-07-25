@@ -12,14 +12,22 @@ export const styles = (theme: Theme) => ({
       margin: '8px 24px 8px 0px',
     },
   },
+  borderRight: {
+    borderRight: `1px solid ${theme.palette.text.borderColor}`,
+    paddingRight: theme.spacing(6),
+  },
   value: {
     ...theme.typography['h2'],
     color: theme.palette.text.primary,
+    fontWeight: '700',
+    textAlign: 'left',
   },
   label: {
-    ...theme.typography['subline-lg'],
+    // ...theme.typography['subline-lg'],
     display: 'inline-flex',
-    color: theme.palette.text.disabled,
+    color: theme.palette.text.primary,
+    fontSize: '14px',
+    fontWeight: '500',
   },
   blurred: {
     filter: 'blur(.5rem)',
