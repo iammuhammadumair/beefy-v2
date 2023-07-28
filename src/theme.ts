@@ -164,6 +164,7 @@ const theme = createTheme(
         middle: '#D0D0DA',
         light: '#F5F5FF',
         borderColor: '#364262',
+        darakShade: '#23262F',
       },
     },
     typography: {

@@ -10,7 +10,7 @@ interface ExposureBarProps {
   data: BaseEntry[];
 }
 
-const COLORS = ['#5C70D6', '#5C99D6', '#5CC2D6', '#5CD6AD', '#70D65C', '#1e9c05'];
+const COLORS = ['#6391FF', '#F7931A', '#59A662', '#5AAEC9', '#C3136F', '#8247E4'];
 
 export const ExposureBar = memo<ExposureBarProps>(function ExposureBar({ data }) {
   const classes = useStyles();
