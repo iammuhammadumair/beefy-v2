@@ -18,9 +18,9 @@ export const styles = (theme: Theme) => ({
     alignItems: 'center',
   },
   square: {
-    height: '12px',
-    width: '12px',
-    borderRadius: '2px',
+    height: '20px',
+    width: '20px',
+    borderRadius: '50px',
     [theme.breakpoints.down('xs')]: {
       width: '14px',
     },

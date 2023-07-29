@@ -4,8 +4,8 @@ export const styles = (theme: Theme) => ({
   assetsContainer: {
     display: 'flex',
     flexDirection: 'column' as const,
-    marginTop: '2px',
-    rowGap: '2px',
+    // marginTop: '2px',
+    // rowGap: '2px',
     '& div:last-child': {
       borderRadius: '0px 0px 8px 8px',
     },
@@ -25,11 +25,12 @@ export const styles = (theme: Theme) => ({
     },
   },
   assetTypes: {
-    backgroundColor: '#1B1E31',
+    backgroundColor: theme.palette.background.secondColor,
     padding: '8px 16px',
-    ...theme.typography['subline-sm'],
-    color: theme.palette.text.disabled,
-    fontWeight: 700,
+    // ...theme.typography['subline-sm'],
+    color: theme.palette.text.primary,
+    fontWeight: '600',
+    fontSize: '14px',
   },
   sortColumn: {
     justifyContent: 'flex-start',

@@ -9,7 +9,7 @@ import type { ChainEntity } from '../../../data/entities/chain';
 import { selectChainById } from '../../../data/selectors/chains';
 import { selectTreasuryWalletAddressesByChainId } from '../../../data/selectors/treasury';
 import { styles } from './styles';
-import iconExternalLink from '../../../../images/icons/external-link.svg';
+import iconExternalLink from '../../../../images/icons/Union.svg';
 
 const useStyles = makeStyles(styles);
 

@@ -3,6 +3,7 @@ import type { Theme } from '@material-ui/core';
 export const styles = (theme: Theme) => ({
   asset: {
     display: 'grid',
+    borderBottom: `1px solid ${theme.palette.text.borderColor}`,
     padding: '16px 24px',
     backgroundColor: '#242842',
     gridTemplateColumns: 'repeat(2,minmax(0,1fr))',
@@ -19,9 +20,10 @@ export const styles = (theme: Theme) => ({
   },
   value: {
     ...theme.typography['body-lg-med'],
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
     display: 'flex',
     justifyContent: 'flex-end',
+    fontWeight: '600',
   },
   subValue: {
     ...theme.typography['body-sm'],

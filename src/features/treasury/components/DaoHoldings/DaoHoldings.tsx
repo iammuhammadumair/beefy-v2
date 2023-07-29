@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/styles';
 import { memo, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { Section } from '../../../../components/Section';
 import { useAppSelector } from '../../../../store';
 import { selectTreasurySorted } from '../../../data/selectors/treasury';
@@ -54,13 +54,13 @@ function useNumColumns() {
 }
 
 export const DaoHoldings = memo(function DaoHoldings() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const classes = useStyles();
   const numColumns = useNumColumns();
   const treasuryColumns = useTreasuryColumns(numColumns);
 
   return (
-    <Section title={t('Treasury-Title-Holdings')}>
+    <Section>
       <div className={classes.masonry}>
         {treasuryColumns.map((columns, i) => (
           <div key={i} className={classes.column}>

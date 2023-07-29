@@ -125,6 +125,8 @@ const theme = createTheme(
         footer: '#2A3447', //theme color
         alternativeFooterHeader: '#020203',
         cta: '#6391FF',
+        secondColor: '#253662',
+        // cta: '#59A662',
         appBG: '#1B1E31',
         filters: {
           active: '#4C5480',
@@ -162,6 +164,8 @@ const theme = createTheme(
         dark: '#999CB3',
         middle: '#D0D0DA',
         light: '#F5F5FF',
+        borderColor: '#364262',
+        darakShade: '#23262F',
       },
     },
     typography: {

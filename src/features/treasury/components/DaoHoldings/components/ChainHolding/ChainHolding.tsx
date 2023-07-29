@@ -26,13 +26,15 @@ export const ChainHolding = memo<ChainHoldingProps>(function ChainHolding({ chai
 
   return (
     <div className={classes.container}>
-      <div className={clsx(classes.title, classes[`headerNetwork-${chainId}`])}>
-        <div className={classes.nameContainer}>
-          <img className={classes.icon} src={getNetworkSrc(chainId)} alt={chainId} />
-          <div className={classes.chainName}>{chain.name}</div>
-          <ExplorerLinks chainId={chainId} />
+      <div className={classes.offWhiteBackground}>
+        <div className={clsx(classes.title, classes[`headerNetwork-${chainId}`])}>
+          <div className={classes.nameContainer}>
+            <img className={classes.icon} src={getNetworkSrc(chainId)} alt={chainId} />
+            <div className={classes.chainName}>{chain.name}</div>
+            <ExplorerLinks chainId={chainId} />
+          </div>
+          <div className={classes.usdValue}>{formatBigUsd(totalUsd)}</div>
         </div>
-        <div className={classes.usdValue}>{formatBigUsd(totalUsd)}</div>
       </div>
       <Assets chainId={chainId} />
     </div>

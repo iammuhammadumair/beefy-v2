@@ -26,11 +26,10 @@ export const Home = memo(function Home() {
 
   return (
     <>
-      <div className={classes.top}>
+      <div className={classes.top}></div>
+      <Container maxWidth="lg" className={classes.vaultContainer}>
         <Banners />
         <Portfolio />
-      </div>
-      <Container maxWidth="lg" className={classes.vaultContainer}>
         {desktopView ? <ChainButtonFilter className={classes.chain} /> : null}
         {/* <Filters /> */}
         <Vaults />
