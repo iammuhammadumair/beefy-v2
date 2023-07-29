@@ -3,5 +3,6 @@ export const styles = () => ({
     marginTop: '32px',
     border: 'solid 2px #363B63',
     borderRadius: '12px',
+    padding: '20px 10px',
   },
 });

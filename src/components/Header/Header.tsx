@@ -12,11 +12,16 @@ import {
 import clsx from 'clsx';
 import { styles } from './styles';
 import { NavItem } from './components/NavItem';
-import { ReactComponent as VaultsIcon } from '../../images/icons/navigation/vault.svg';
-import { ReactComponent as DashboardIcon } from '../../images/icons/navigation/dashboard.svg';
+// import { ReactComponent as VaultsIcon } from '../../images/icons/navigation/vault.svg';
+import { ReactComponent as VaultsIcon } from '../../images/icons/navigation/wallet_fill.svg';
+// import { ReactComponent as DashboardIcon } from '../../images/icons/navigation/dashboard.svg';
+import { ReactComponent as DashboardIcon } from '../../images/icons/navigation/layout_fill.svg';
+
 // import { ReactComponent as BridgeIcon } from '../../images/icons/navigation/bridge.svg';
-import { ReactComponent as BuyCryptoIcon } from '../../images/icons/navigation/buy-crypto.svg';
-import { ReactComponent as DaoIcon } from '../../images/icons/navigation/dao.svg';
+// import { ReactComponent as BuyCryptoIcon } from '../../images/icons/navigation/buy-crypto.svg';
+import { ReactComponent as BuyCryptoIcon } from '../../images/icons/navigation/bank_card_fill.svg';
+
+import { ReactComponent as DaoIcon } from '../../images/icons/navigation/bank_fill.svg';
 import { ReactComponent as ResourcesIcon } from '../../images/icons/navigation/resources.svg';
 import { DaoNavItems, ResourcesNavItems } from './list';
 import { ConnectionStatus } from './components/ConnectionStatus';
@@ -28,7 +33,7 @@ import { selectShouldInitProposals } from '../../features/data/selectors/data-lo
 import { fetchActiveProposals } from '../../features/data/actions/proposal';
 import { UnreadProposalsDot } from './components/Badges/UnreadProposalsDot';
 import headerLogoMobile from '../../images/bifi-logos/header-logo-notext.svg';
-import headerLogoDesktop from '../../images/bifi-logos/header-logo.svg';
+import headerLogoDesktop from '../../images/bifi-logos/header-logo-1.svg';
 
 const useStyles = makeStyles(styles);
 export const Header = memo(function Header() {

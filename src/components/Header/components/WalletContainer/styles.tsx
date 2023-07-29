@@ -20,7 +20,7 @@ export const styles = (theme: Theme) => ({
   disconnected: {
     display: 'flex',
     justifyContent: 'center',
-    background: theme.palette.background.cta,
+    background: 'transparent',
     '& $address': {
       color: theme.palette.text.primary,
       textOverflow: 'clip',
@@ -38,6 +38,7 @@ export const styles = (theme: Theme) => ({
   connected: {
     borderColor: theme.palette.background.cta,
     backgroundColor: '#242737',
+    borderRadius: '50px',
   },
   loading: {
     paddingTop: '4px',
