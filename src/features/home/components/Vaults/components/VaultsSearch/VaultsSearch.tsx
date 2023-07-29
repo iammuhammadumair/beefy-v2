@@ -61,8 +61,9 @@ export const VaultsSearch = memo(function VaultsHeader() {
       className={classes.search}
       value={value}
       onChange={handleChange}
+      startAdornment={icon}
       fullWidth={true}
-      endAdornment={icon}
+      // endAdornment={icon}
       placeholder={t('Filter-Search')}
     />
   );

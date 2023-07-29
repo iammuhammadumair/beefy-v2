@@ -2,9 +2,9 @@ export const styles = () => ({
   search: {
     color: '#D0D0DA',
     background: '#1B1E31',
-    borderRadius: '8px',
+    borderRadius: '50px',
     '& .MuiInputBase-input': {
-      padding: '8px 16px',
+      padding: '8px 8px',
       color: '#D0D0DA',
       height: 'auto',
       '&:focus': {
@@ -20,7 +20,7 @@ export const styles = () => ({
     background: 'transparent',
     padding: 0,
     border: 0,
-    margin: '0 16px 0 0',
+    margin: '0 0px 0 16px',
     boxShadow: 'none',
     lineHeight: 'inherit',
     display: 'flex',

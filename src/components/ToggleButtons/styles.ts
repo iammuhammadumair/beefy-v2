@@ -4,9 +4,9 @@ export const styles = (theme: Theme) => ({
   buttons: {
     display: 'flex',
     width: 'fit-content',
-    border: 'solid 2px #303550',
-    borderRadius: '8px',
-    backgroundColor: '#262A40',
+    // border: 'solid 2px #303550',
+    // borderRadius: '8px',
+    // backgroundColor: '#262A40',
   },
   fullWidth: {
     width: '100%',
@@ -16,11 +16,11 @@ export const styles = (theme: Theme) => ({
     color: '#8A8EA8',
     backgroundColor: 'inherit',
     border: 'none',
-    borderRadius: '6px',
+    borderRadius: '50px',
     boxShadow: 'none',
     cursor: 'pointer',
     margin: 0,
-    padding: `6px 16px`,
+    padding: `0px 12px`,
     flexGrow: 1,
     flexShrink: 0,
     '&:hover': {
@@ -33,15 +33,15 @@ export const styles = (theme: Theme) => ({
   },
   selected: {
     pointerEvents: 'none' as const,
-    color: theme.palette.text.primary,
-    backgroundColor: theme.palette.background.vaults.defaultOutline,
+    color: theme.palette.text.primaryLight,
+    backgroundColor: `${theme.palette.background.vaults.defaultOutline} !important`,
     '&:hover': {
-      color: theme.palette.text.primary,
-      backgroundColor: theme.palette.background.vaults.defaultOutline,
+      color: theme.palette.text.primaryLight,
+      backgroundColor: `${theme.palette.background.vaults.defaultOutline} !important`,
     },
   },
   untogglable: {
-    padding: `${8 - 2}px ${16 - 12 - 2}px`,
+    // padding: `${8 - 2}px ${16 - 12 - 2}px`,
     '& $button': {
       padding: '0 12px',
       '&:hover': {
@@ -54,10 +54,10 @@ export const styles = (theme: Theme) => ({
       },
       '&$selected': {
         pointerEvents: 'all' as const,
-        color: theme.palette.text.primary,
+        color: theme.palette.text.primaryLight,
         backgroundColor: 'transparent',
         '&:hover': {
-          color: theme.palette.text.primary,
+          color: theme.palette.text.primaryLight,
           backgroundColor: 'transparent',
         },
       },
