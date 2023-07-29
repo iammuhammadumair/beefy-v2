@@ -10,7 +10,9 @@ import { selectTotalBuybackUsdAmount } from '../../../../data/selectors/buyback'
 import { ModalTvl } from '../ModalTvl';
 import { useAppSelector } from '../../../../../store';
 import { Modal } from '../../../../../components/Modal';
-import infoIcon from '../../../../../images/icons/i.svg';
+import tvlIcon from '../../../../../images/icons/tvl.png';
+import walletIcon from '../../../../../images/icons/wallet.png';
+import buybackIcon from '../../../../../images/icons/buyback.png';
 
 const useStyles = makeStyles(styles);
 export const VaultsStats = () => {
@@ -32,28 +34,29 @@ export const VaultsStats = () => {
 
   return (
     <Grid container className={classes.userStats}>
-      <Box className={classes.stat}>
+      <Box className={`${classes.stat} ${classes.borderRight} `}>
         <Box className={classes.labelWithIcon}>
           <div className={classes.label}>{t('TVL')}</div>
-          <div onClick={handleTvlModalOpen}>
-            <img className={classes.icon} src={infoIcon} alt="i" />
-          </div>
+          <div onClick={handleTvlModalOpen}></div>
         </Box>
         <div className={classes.value}>
           <ValueText value={formatBigUsd(totalTvl)} />
         </div>
+        <img className={classes.icon} src={tvlIcon} alt="i" />
       </Box>
-      <Box className={classes.stat}>
+      <Box className={`${classes.stat} ${classes.borderRight} `}>
         <div className={classes.label}>{t('Vaults-Title')}</div>
         <div className={classes.value}>
           <ValueText value={totalActiveVaults} />
         </div>
+        <img className={classes.icon} src={walletIcon} alt="i" />
       </Box>
       <Box className={classes.stat}>
         <div className={classes.label}>{t('BuyBack')}</div>
         <div className={classes.value}>
           <ValueText value={formatBigUsd(buyback)} />
         </div>
+        <img className={classes.icon} src={buybackIcon} alt="i" />
       </Box>
       <Modal open={isTvlModalOpen} onClose={handleTvlModalClose}>
         <ModalTvl close={handleTvlModalClose} />

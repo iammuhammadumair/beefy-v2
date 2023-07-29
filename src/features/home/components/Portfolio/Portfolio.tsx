@@ -33,9 +33,9 @@ export const Portfolio = () => {
               {t('Portfolio-Portfolio')}{' '}
               <Button size="small" className={classes.btnHide} onClick={updateHideBalance}>
                 {hideBalance ? (
-                  <VisibilityOutlinedIcon htmlColor={`${theme.palette.primary.main}`} />
+                  <VisibilityOutlinedIcon htmlColor={`${theme.palette.text.primary}`} />
                 ) : (
-                  <VisibilityOffOutlinedIcon htmlColor={`${theme.palette.primary.main}`} />
+                  <VisibilityOffOutlinedIcon htmlColor={`${theme.palette.text.primary}`} />
                 )}
               </Button>
             </div>

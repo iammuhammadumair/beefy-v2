@@ -12,7 +12,7 @@ interface ExposureLegendProps {
   formatter?: (s: string) => string;
 }
 
-const COLORS = ['#5C70D6', '#5C99D6', '#5CC2D6', '#5CD6AD', '#70D65C', '#1e9c05'];
+const COLORS = ['#6391FF', '#F7931A', '#59A662', '#5AAEC9', '#C3136F', '#8247E4'];
 
 export const ExposureLegend = memo<ExposureLegendProps>(function ExposureLegend({
   data,

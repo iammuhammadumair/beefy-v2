@@ -1,14 +1,18 @@
 import type { Theme } from '@material-ui/core';
 export const styles = (theme: Theme) => ({
   container: {
-    backgroundColor: theme.palette.background.alternativeFooterHeader,
-    padding: `24px 0 48px 0`,
+    backgroundColor: theme.palette.background.body,
     [theme.breakpoints.down('sm')]: {
-      padding: `24px 0 32px 0`,
+      // padding: `0px 0 0px 0`,
     },
   },
   title: {
     ...theme.typography.h1,
     marginBottom: '24px',
+    height: '100px',
+    backgroundColor: theme.palette.background.secondColor,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'start',
   },
 });

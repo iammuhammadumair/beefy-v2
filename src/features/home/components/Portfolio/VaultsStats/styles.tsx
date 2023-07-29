@@ -5,13 +5,13 @@ export const styles = theme => ({
       marginRight: '0',
     },
     [theme.breakpoints.up('md')]: {
-      justifyContent: 'flex-end',
+      justifyContent: 'flex-start',
     },
   },
   stat: {
     paddingTop: 0,
     paddingBottom: 0,
-    marginRight: theme.spacing(4),
+    marginRight: theme.spacing(6),
     [theme.breakpoints.down('sm')]: {
       margin: '8px 24px 8px 0px',
     },
@@ -19,11 +19,15 @@ export const styles = theme => ({
   value: {
     ...theme.typography['h2'],
     color: theme.palette.text.primary,
+    fontWeight: '700',
+    textAlign: 'left',
   },
   label: {
-    ...theme.typography['subline-lg'],
+    // ...theme.typography['subline-lg'],
     display: 'inline-flex',
-    color: theme.palette.text.disabled,
+    color: theme.palette.text.primary,
+    fontSize: '14px',
+    fontWeight: '500',
   },
   obscured: {
     color: '#424866',
@@ -32,12 +36,16 @@ export const styles = theme => ({
     display: 'flex',
     alignItems: 'center',
     [theme.breakpoints.up('md')]: {
-      justifyContent: 'flex-end',
+      justifyContent: 'flex-start',
     },
   },
   icon: {
     marginLeft: theme.spacing(0.5),
     cursor: 'pointer',
     display: 'block',
+  },
+  borderRight: {
+    borderRight: `1px solid ${theme.palette.text.borderColor}`,
+    paddingRight: theme.spacing(6),
   },
 });

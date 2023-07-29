@@ -5,6 +5,11 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column' as const,
   },
+  offWhiteBackground: {
+    backgroundColor: '#F8F8F8',
+    borderRadius: '8px 8px 0px 0px',
+    // this is white
+  },
   title: {
     ...theme.typography.h3,
     padding: '16px 24px',
@@ -12,7 +17,8 @@ export const styles = (theme: Theme) => ({
     columnGap: '12px',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#242842',
+    // backgroundColor: '#242842',
+    backgroundColor: '#F8F8F8',
     borderRadius: '8px 8px 0px 0px',
 
     [theme.breakpoints.down('md')]: {
@@ -27,28 +33,28 @@ export const styles = (theme: Theme) => ({
     columnGap: '12px',
     alignItems: 'center',
   },
-  chainName: { color: theme.palette.text.primary },
-  usdValue: { color: theme.palette.text.primary },
+  chainName: { color: theme.palette.text.darakShade },
+  usdValue: { color: theme.palette.text.darakShade },
   'headerNetwork-bsc': {
-    backgroundColor: 'rgba(240, 185, 11, 0.2)',
+    backgroundColor: 'rgba(240, 185, 11, 0.15)',
   },
   'headerNetwork-heco': {
     backgroundColor: 'rgba(2, 148, 63, 0.2)',
   },
   'headerNetwork-avax': {
-    backgroundColor: 'rgba(231, 65, 66, 0.2)',
+    backgroundColor: 'rgba(231, 65, 66, 0.15)',
   },
   'headerNetwork-polygon': {
     backgroundColor: 'rgba(245, 240, 253, 0.3)',
   },
   'headerNetwork-fantom': {
-    backgroundColor: 'rgba(25, 105, 255, 0.2)',
+    backgroundColor: 'rgba(25, 105, 255, 0.15)',
   },
   'headerNetwork-harmony': {
     backgroundColor: 'rgba(0, 216, 175, 0.2)',
   },
   'headerNetwork-arbitrum': {
-    backgroundColor: 'rgba(40, 159, 239, 0.2)',
+    backgroundColor: 'rgba(45, 55, 75, 0.15)',
   },
   'headerNetwork-celo': {
     backgroundColor: 'rgba(252, 254, 83, 0.14)',
