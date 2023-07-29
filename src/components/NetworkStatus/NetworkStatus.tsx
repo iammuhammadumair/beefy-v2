@@ -71,16 +71,19 @@ export const NetworkStatus = memo(function NetworkStatus({
     loading: hasAnyLoading,
     notLoading: !hasAnyLoading,
   };
-  const pulseClassName = clsx(classes.pulseCircle, colorClasses);
+  // const pulseClassName = clsx(classes.pulseCircle, colorClasses);
 
   return (
     <>
       <button className={clsx({ [classes.container]: true, open: open })} onClick={handleToggle}>
-        <div className={clsx(classes.circle, colorClasses)}>
+        <div className={clsx(classes.outerCircle)}>
+          <div className="middleCircle">
+            <div className={clsx([classes.circle], colorClasses)}></div>
+          </div>
+          {/* <div className={pulseClassName} />
           <div className={pulseClassName} />
           <div className={pulseClassName} />
-          <div className={pulseClassName} />
-          <div className={pulseClassName} />
+          <div className={pulseClassName} /> */}
         </div>
         {isWalletConnected && <ActiveChain chainId={currentChainId} />}
       </button>

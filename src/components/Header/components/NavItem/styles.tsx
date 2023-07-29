@@ -7,15 +7,24 @@ export const styles = (theme: Theme) => ({
     textDecoration: 'none',
     color: theme.palette.text.disabled,
     columnGap: '8px',
+
     '& .MuiBadge-root': {
       padding: '0px 12px 0px 0px',
       verticalAlign: 'initial',
       columnGap: '8px',
     },
+    '& svg path': {
+      fill: theme.palette.text.disabled,
+    },
     '&:hover': {
       color: theme.palette.text.primary,
       cursor: 'pointer',
+
+      '& svg path': {
+        fill: theme.palette.text.primary,
+      },
     },
+
     '& a': {
       textDecoration: 'none',
       color: theme.palette.text.disabled,
@@ -32,7 +41,11 @@ export const styles = (theme: Theme) => ({
     '& svg ': {
       color: theme.palette.text.primary,
     },
+    '& svg path': {
+      fill: theme.palette.text.primary,
+    },
   },
+
   itemMobile: {
     padding: '16px',
     display: 'flex',

@@ -4,6 +4,7 @@ export const styles = (theme: Theme) => ({
   navHeader: {
     background: 'transparent',
     boxShadow: 'none',
+    borderBottom: '1px solid #364262',
     '&:hover .MuiListItem-button': {
       background: 'transparent',
     },

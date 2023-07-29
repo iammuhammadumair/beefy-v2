@@ -1,6 +1,6 @@
 import type { Theme } from '@material-ui/core';
 
-const loadingColor = '#D6D05C';
+const loadingColor = 'rgba(255, 255, 255, 1)';
 const warningColor = '#D19847';
 const successColor = '#59A662';
 
@@ -23,10 +23,29 @@ export const styles = (theme: Theme) => ({
     },
     padding: '0px 16px',
   },
+  outerCircle: {
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    height: '25px',
+    width: '25px',
+    borderRadius: '50%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    '& .middleCircle': {
+      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+      height: '19px',
+      width: '19px',
+      borderRadius: '50%',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  },
   circle: {
-    width: '12px',
-    height: '12px',
-    borderRadius: '30px',
+    width: '13px',
+    height: '13px',
+    borderRadius: '50%',
+
     '&.loading': {
       backgroundColor: loadingColor,
     },
