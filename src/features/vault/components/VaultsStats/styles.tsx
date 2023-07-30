@@ -28,6 +28,8 @@ export const styles = (theme: Theme) => ({
   },
   depositStats: {
     width: '100%',
+    borderRadius: '10px',
+    border: `1px solid ${theme.palette.background.default}`,
   },
   depositStatsBox: {
     height: 96,
@@ -35,7 +37,7 @@ export const styles = (theme: Theme) => ({
     flexWrap: 'nowrap' as const,
     justifyContent: 'flex-end',
     textAlign: 'end' as const,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.body,
     borderRadius: '8px',
     padding: '16px 24px',
     [theme.breakpoints.down('md')]: {
@@ -100,6 +102,7 @@ export const styles = (theme: Theme) => ({
     alignItems: 'flex-start',
     padding: '10px',
   },
+  statsBody: {},
   stat3: {
     display: 'flex',
     flexDirection: 'column' as const,
