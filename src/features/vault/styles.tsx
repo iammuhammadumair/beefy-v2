@@ -42,6 +42,9 @@ export const styles = (theme: Theme) => ({
   },
   titleContainer: {
     height: '100px',
+    [theme.breakpoints.down('md')]: {
+      height: '150px',
+    },
     backgroundColor: theme.palette.background.secondColor,
     display: 'flex',
     alignItems: 'center',

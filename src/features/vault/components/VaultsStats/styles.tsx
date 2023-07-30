@@ -79,6 +79,12 @@ export const styles = (theme: Theme) => ({
     alignItems: 'center',
     paddingRight: '10px',
   },
+  icon2: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    // paddingRight: 'px',
+  },
 
   statFigures: {
     display: 'flex',
@@ -86,6 +92,13 @@ export const styles = (theme: Theme) => ({
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     padding: '20px',
+  },
+  statFigures2: {
+    display: 'flex',
+    flexDirection: 'column' as const,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    padding: '10px',
   },
   stat3: {
     display: 'flex',
@@ -97,10 +110,11 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column' as const,
     justifyContent: 'flex-start',
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
     [theme.breakpoints.down('md')]: {
       alignItems: 'flex-start',
     },
+    padding: '8px 0 0 12px',
   },
   divider: {
     marginRight: theme.spacing(3),

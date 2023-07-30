@@ -8,8 +8,10 @@ export const styles = (theme: Theme) => ({
     whiteSpace: 'nowrap' as const,
     [theme.breakpoints.down('md')]: {
       textAlign: 'left' as const,
+      fontSize: '12px',
+      fontWeight: '300',
     },
-    fontSize: '26px',
+    fontSize: '22px',
     fontWeight: '700',
   },
   label: {

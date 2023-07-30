@@ -11,6 +11,10 @@ export const styles = (theme: Theme) => ({
     ...theme.typography['body-lg-med'],
     margin: 0,
     padding: 0,
+    [theme.breakpoints.down('md')]: {
+      fontSize: '12px',
+      fontWeight: '300',
+    },
     fontSize: '26px',
     fontWeight: '700',
   },
