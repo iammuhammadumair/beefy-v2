@@ -65,7 +65,7 @@ function VaultsStatsComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
       </div>
       <div className={classes.depositStats}>
         <Grid container className={classes.depositStatsBox}>
-          <Grid item xs={6} className={classes}>
+          <Grid item xs={6} className={classes.statsBody}>
             <div className={`${classes.statsContainer}`}>
               <Box className={classes.statFigures2}>
                 <VaultDeposited vaultId={vaultId} />

@@ -5,9 +5,10 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     flexWrap: 'wrap' as const,
     rowGap: '16px',
-    borderRadius: '12px',
-    backgroundColor: theme.palette.background.vaults.defaultOutline,
+    borderRadius: '8px',
+    backgroundColor: theme.palette.background.secondColor,
     padding: '16px',
+    marginTop: '10px',
   },
   text: {
     ...theme.typography['body-lg-med'],
@@ -46,6 +47,7 @@ export const styles = (theme: Theme) => ({
     },
   },
   linkButtonBg: {
-    backgroundColor: '#484F84',
+    backgroundColor: theme.palette.background.vaults.defaultThirdColor,
+    radius: '8px',
   },
 });
