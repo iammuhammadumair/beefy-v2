@@ -9,10 +9,12 @@ export const styles = (theme: Theme) => ({
   containerBoost: {
     padding: theme.spacing(3),
     borderRadius: '12px',
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.body,
+    border: `1px solid ${theme.palette.background.default}`,
     display: 'flex',
     flexDirection: 'column' as const,
     rowGap: '16px',
+    border: `1px solid ${theme.palette.background.default}`,
   },
   containerExpired: {
     display: 'flex',
@@ -30,9 +32,13 @@ export const styles = (theme: Theme) => ({
   },
   title: {
     ...theme.typography['h2'],
-    color: '#E88225',
+    color: theme.palette.text.primary,
     display: 'flex',
     alignItems: 'center',
+    fontSize: '20px',
+    fontWeight: 700,
+    borderBottom: `1px solid ${theme.palette.background.default}`,
+    paddingBottom: theme.spacing(1),
   },
   titleWhite: {
     color: '#fff',
@@ -52,7 +58,7 @@ export const styles = (theme: Theme) => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
     columnGap: '16px',
-    backgroundColor: '#2D3153',
+    // backgroundColor: '#2D3153',
     padding: '12px',
     borderRadius: '8px',
   },
@@ -62,15 +68,38 @@ export const styles = (theme: Theme) => ({
     },
   },
   boostStatLabel: {
-    ...theme.typography['subline-sm'],
-    color: '#999CB3',
+    // ...theme.typography['subline-sm'],
+    color: theme.palette.text.primary,
+    fontWeight: 500,
+    fontSize: '14px',
   },
   boostStatValue: {
     ...theme.typography['body-lg-med'],
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
+    fontWeight: 700,
+    fontSize: '22px',
   },
   button: {
-    backgroundColor: theme.palette.background.vaults.defaultOutline,
-    borderRadius: '8px',
+    backgroundColor: '#6391FF',
+    borderRadius: '50px',
+    width: '60%',
+    // textAlign: 'center'
+  },
+  buttonContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: '25px',
+  },
+  divider: {
+    // marginRight: theme.spacing(3),
+    width: 2,
+    backgroundColor: theme.palette.background.content,
+    [theme.breakpoints.down('sm')]: {
+      marginRight: theme.spacing(2.5),
+    },
+  },
+  borderRight: {
+    borderRight: `1px solid ${theme.palette.text.borderColor}`,
   },
 });

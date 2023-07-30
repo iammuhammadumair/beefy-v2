@@ -8,9 +8,9 @@ export const styles = (theme: Theme) => ({
     alignItems: 'center',
     textDecoration: 'none',
     color: theme.palette.text.secondary,
-    backgroundColor: theme.palette.background.vaults.defaultOutline,
+    backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     padding: '2px 8px',
-    borderRadius: '4px',
+    borderRadius: '8px',
     '&:hover': {
       color: theme.palette.text.primary,
       backgroundColor: '#3F466D',
