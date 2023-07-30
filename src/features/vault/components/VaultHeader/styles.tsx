@@ -24,12 +24,15 @@ export const styles = (theme: Theme) => ({
   labelsHolder: {
     display: 'flex',
     rowGap: '24px',
-    columnGap: '24px',
+    columnGap: '28px',
     alignItems: 'center',
     justifyContent: 'flex-end',
     [theme.breakpoints.down('md')]: {
       justifyContent: 'flex-start',
     },
+    backgroundColor: '#353F51',
+    padding: '0 20px 0 20px',
+    borderRadius: '10px',
   },
   platformLabel: {
     ...theme.typography['subline-sm'],
@@ -38,6 +41,8 @@ export const styles = (theme: Theme) => ({
       color: theme.palette.text.primary,
       textTransform: 'uppercase' as const,
     },
+    fontWeight: '500',
+    fontSize: '12px',
   },
   shareHolder: {
     display: 'flex',

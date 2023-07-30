@@ -18,9 +18,10 @@ export const styles = (theme: Theme) => ({
     height: 96,
     display: 'flex',
     justifyContent: 'flex-start',
-    backgroundColor: theme.palette.background.default,
-    borderRadius: '8px',
-    padding: '16px 24px',
+    backgroundColor: theme.palette.background.body,
+    borderRadius: '10px',
+    border: `1px solid ${theme.palette.background.default}`,
+    // padding: '16px 24px',
     [theme.breakpoints.down('md')]: {
       padding: '16px',
     },
@@ -46,6 +47,7 @@ export const styles = (theme: Theme) => ({
   stat: {
     display: 'flex',
     width: '33%',
+    backgroundColor: 'red',
     paddingTop: 0,
     paddingBottom: 0,
     marginRight: theme.spacing(4),
@@ -63,6 +65,27 @@ export const styles = (theme: Theme) => ({
       marginRight: theme.spacing(4),
       justifyContent: 'flex-start',
     },
+  },
+  statsContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  statsColor: {
+    backgroundColor: '#6391FF',
+  },
+  icon: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingRight: '10px',
+  },
+
+  statFigures: {
+    display: 'flex',
+    flexDirection: 'column' as const,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    padding: '20px',
   },
   stat3: {
     display: 'flex',

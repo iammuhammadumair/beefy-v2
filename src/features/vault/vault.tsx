@@ -77,39 +77,46 @@ const VaultContent = memo<VaultContentProps>(function VaultContent({ vaultId }) 
   );
 
   return (
-    <Container maxWidth="lg" className={classes.page}>
-      <VaultMeta vaultId={vaultId} />
-      <RenBannerVault vaultId={vaultId} />
-      <VaultHeader vaultId={vaultId} />
-      <VaultsStats vaultId={vaultId} />
-      <div className={classes.contentContainer}>
-        <div className={classes.contentColumns}>
-          <div className={classes.columnActions}>
-            <Actions vaultId={vaultId} />
-            <Hidden smDown>
-              <InsuranceCards vaultId={vaultId} />
-              <LeverageCards vaultId={vaultId} />
-            </Hidden>
-          </div>
-          <div className={classes.columnInfo}>
-            {isBoostedOrPreStake && <BoostCard vaultId={vaultId} />}
-            {isGovVault(vault) && <GovDetailsCard vaultId={vaultId} />}
-            {!isGovVault(vault) ? (
-              <PnLGraphLoader vaultId={vaultId} address={walletAddress} />
-            ) : null}
-            {!isGovVault(vault) ? <HistoricGraphsLoader vaultId={vaultId} /> : null}
-            <LiquidityPoolBreakdownLoader vaultId={vaultId} />
-            <SafetyCard vaultId={vaultId} />
-            {!isGovVault(vault) ? <StrategyCard vaultId={vaultId} /> : null}
-            <InfoCards chainId={vault.chainId} vaultId={vault.id} />
-            <AssetsCard vaultId={vault.id} />
-            <Hidden mdUp>
-              <InsuranceCards vaultId={vaultId} />
-              <LeverageCards vaultId={vaultId} />
-            </Hidden>
+    <div>
+      <div className={classes.titleContainer}>
+        <Container maxWidth="lg" className={classes.page}>
+          <VaultHeader vaultId={vaultId} />
+        </Container>
+      </div>
+      <Container maxWidth="lg" className={classes.page}>
+        <VaultMeta vaultId={vaultId} />
+        <RenBannerVault vaultId={vaultId} />
+        <VaultsStats vaultId={vaultId} />
+
+        <div className={classes.contentContainer}>
+          <div className={classes.contentColumns}>
+            <div className={classes.columnActions}>
+              <Actions vaultId={vaultId} />
+              <Hidden smDown>
+                <InsuranceCards vaultId={vaultId} />
+                <LeverageCards vaultId={vaultId} />
+              </Hidden>
+            </div>
+            <div className={classes.columnInfo}>
+              {isBoostedOrPreStake && <BoostCard vaultId={vaultId} />}
+              {isGovVault(vault) && <GovDetailsCard vaultId={vaultId} />}
+              {!isGovVault(vault) ? (
+                <PnLGraphLoader vaultId={vaultId} address={walletAddress} />
+              ) : null}
+              {!isGovVault(vault) ? <HistoricGraphsLoader vaultId={vaultId} /> : null}
+              <LiquidityPoolBreakdownLoader vaultId={vaultId} />
+              <SafetyCard vaultId={vaultId} />
+              {!isGovVault(vault) ? <StrategyCard vaultId={vaultId} /> : null}
+              <InfoCards chainId={vault.chainId} vaultId={vault.id} />
+              <AssetsCard vaultId={vault.id} />
+              <Hidden mdUp>
+                <InsuranceCards vaultId={vaultId} />
+                <LeverageCards vaultId={vaultId} />
+              </Hidden>
+            </div>
           </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 });

@@ -13,6 +13,8 @@ import { GovVaultRewards } from '../../../../components/GovVaultRewards/GovVault
 import { getBeefyApi } from '../../../data/apis/instances';
 import { useAppSelector } from '../../../../store';
 import { formatDistance } from 'date-fns';
+import copperCoin from '../../../../images/icons/copper_coin_fill.svg';
+import presentationFill from '../../../../images/icons/presentation_2_fill.svg';
 
 const useStyles = makeStyles(styles);
 
@@ -26,15 +28,30 @@ function VaultsStatsComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
     <div className={classes.stats}>
       <div className={classes.interestStats}>
         <Box className={classes.interestStatsBox}>
-          <Box width={'33%'} className={classes.stat3}>
-            <VaultTvl vaultId={vaultId} />
-          </Box>
-          <Box className={classes.stat}>
-            <Divider className={classes.divider} orientation="vertical" />
-            <Box className={classes.stat3}>
+          <div style={{ width: '33%' }} className={classes.statsContainer}>
+            <Box className={classes.statFigures}>
+              <VaultTvl vaultId={vaultId} />
+            </Box>
+            <div className={classes.icon}>
+              {' '}
+              <img src={copperCoin} alt="icon" />
+            </div>
+          </div>
+
+          <div
+            style={{ width: '33%' }}
+            className={`${classes.statsContainer} ${classes.statsColor}`}
+          >
+            {/* <Divider className={classes.divider} orientation="vertical" /> */}
+            <Box className={classes.statFigures}>
               <YearlyApyStats vaultId={vault.id} />
             </Box>
-          </Box>
+            <div className={classes.icon}>
+              {' '}
+              <img src={presentationFill} alt="icon" />
+            </div>
+          </div>
+
           <Box display="flex">
             <Divider className={classes.divider} orientation="vertical" />
             <Box className={classes.stat3}>
