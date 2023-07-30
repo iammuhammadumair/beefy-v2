@@ -12,6 +12,12 @@ export const styles = (theme: Theme) => ({
     padding: '24px',
     boxShadow: '0px 4px 24px 24px rgba(19, 17, 34, 0.16), 0px 2px 8px rgba(20, 18, 33, 0.2)',
   },
+  filterBtn: {
+    padding: '10px',
+    borderRadius: '4px',
+    backgroundColor: '#F2994A',
+    cursor: 'pointer',
+  },
   sidebar: {
     backgroundColor: '#303550',
     width: '350px',

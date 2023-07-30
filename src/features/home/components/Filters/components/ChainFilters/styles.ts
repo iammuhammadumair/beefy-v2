@@ -15,7 +15,7 @@ export const styles = (theme: Theme) => ({
     margin: '0 auto',
   },
   button: {
-    background: 'transparent',
+    background: theme.palette.background.secondColor,
     boxShadow: 'none',
     flexGrow: 1,
     flexShrink: 0,
@@ -33,7 +33,7 @@ export const styles = (theme: Theme) => ({
     },
   },
   selected: {
-    backgroundColor: theme.palette.background.filters.inactive,
+    backgroundColor: theme.palette.background.secondColor,
   },
   tooltip: {
     ...theme.typography['body-lg-med'],

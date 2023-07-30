@@ -3,7 +3,7 @@ import type { Theme } from '@material-ui/core';
 export const styles = (theme: Theme) => ({
   message: {
     padding: '24px',
-    background: '#2D3153',
+    background: 'transparent',
     borderBottomLeftRadius: '8px',
     borderBottomRightRadius: '8px',
   },
@@ -15,6 +15,17 @@ export const styles = (theme: Theme) => ({
   text: {
     ...theme.typography['body-lg'],
     color: '#D0D0DA',
+  },
+  btn: {
+    backgroundColor: theme.palette.background.cta,
+    color: theme.palette.text.primary,
+    borderColor: theme.palette.background.cta,
+    borderRadius: '50px',
+    '&:hover': {
+      backgroundColor: theme.palette.background.cta,
+      color: theme.palette.text.primary,
+      borderColor: theme.palette.background.cta,
+    },
   },
   extra: {
     marginTop: '24px',

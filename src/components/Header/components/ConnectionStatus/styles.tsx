@@ -8,6 +8,6 @@ export const styles = () => ({
     borderRadius: '50px',
   },
   open: {
-    backgroundColor: '#30354F',
+    backgroundColor: theme.palette.background.cta,
   },
 });

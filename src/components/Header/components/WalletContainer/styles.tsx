@@ -5,7 +5,7 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: '8px',
+    borderRadius: '50px',
     padding: '8px 16px',
   },
   address: {
@@ -20,14 +20,14 @@ export const styles = (theme: Theme) => ({
   disconnected: {
     display: 'flex',
     justifyContent: 'center',
-    background: 'transparent',
+    background: theme.palette.background.cta,
     '& $address': {
       color: theme.palette.text.primary,
       textOverflow: 'clip',
     },
   },
   known: {
-    border: `2px solid #D19847`,
+    border: `2px solid transparent`,
     '& $address': {
       color: theme.palette.text.secondary,
     },

@@ -39,6 +39,8 @@ const NotConnectedMessage = memo<MessageProps>(function NotConnectedMessage({ ti
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
   const walletAddress = useAppSelector(selectWalletAddressIfKnown);
+  const classes = useStyles();
+
   const handleWalletConnect = useCallback(() => {
     if (walletAddress) {
       dispatch(doDisconnectWallet());
@@ -49,7 +51,7 @@ const NotConnectedMessage = memo<MessageProps>(function NotConnectedMessage({ ti
 
   return (
     <Message title={title} text={text}>
-      <Button onClick={handleWalletConnect} variant="success">
+      <Button onClick={handleWalletConnect} variant="success" className={classes.btn}>
         {t('NoResults-ConnectWallet')}
       </Button>
     </Message>
