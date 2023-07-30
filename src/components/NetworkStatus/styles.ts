@@ -8,7 +8,7 @@ export const styles = (theme: Theme) => ({
   container: {
     height: '40px',
     border: 'none',
-    borderRadius: '8px',
+    borderRadius: '50px',
     columnGap: '8px',
     display: 'flex',
     alignItems: 'center',
@@ -16,9 +16,9 @@ export const styles = (theme: Theme) => ({
     cursor: 'pointer',
     backgroundColor: 'transparent',
     '&.open': {
-      backgroundColor: '#30354F',
+      backgroundColor: theme.palette.background.cta,
       '& $line': {
-        backgroundColor: '#434A6F',
+        backgroundColor: '#353F51',
       },
     },
     padding: '0px 16px',
