@@ -10,8 +10,12 @@ const _LabeledStat = ({ value, boosted }: { value: ReactNode; boosted?: ReactNod
 
   return (
     <>
-      {boosted && <div className={classes.value}>{boosted}</div>}
-      <div className={boosted ? classes.valueStrikethrough : classes.value}>{value}</div>
+      {boosted && (
+        <div className={classes.value}>
+          {boosted} <span className={classes.valueStrikethrough}>{value}</span>
+        </div>
+      )}
+      {/* <div className={boosted ? classes.valueStrikethrough : classes.value}></div> */}
     </>
   );
 };

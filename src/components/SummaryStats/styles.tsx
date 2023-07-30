@@ -62,7 +62,8 @@ export const styles = (theme: Theme) => ({
     color: theme.palette.text.primary,
     [theme.breakpoints.down('xs')]: {
       ...theme.typography['body-lg-med'],
-      fontWeight: 300,
+      fontWeight: '300',
+      fontSize: '12px',
     },
     fontWeight: '700',
     fontSize: '26px',

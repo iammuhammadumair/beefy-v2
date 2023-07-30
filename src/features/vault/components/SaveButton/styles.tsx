@@ -3,18 +3,20 @@ import type { Theme } from '@material-ui/core';
 export const styles = (theme: Theme) => ({
   shareButton: {
     display: 'flex',
-    width: '100%',
+    width: '20px  !important',
+    height: '24px',
     alignItems: 'center',
     justifyContent: 'center',
     gap: '8px',
     outline: 'none',
-    '&:focus-visible, &.active': {
+    '&:focus-visible, &.active , &:hover': {
       outline: 'none',
-      backgroundColor: '#363B63',
+      backgroundColor: '#f9a052',
     },
     [theme.breakpoints.down('md')]: {
       padding: '10px',
     },
+    backgroundColor: '#f5b277',
   },
   icon: {
     flexShrink: 0,
