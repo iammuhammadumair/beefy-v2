@@ -13,6 +13,10 @@ import { GovVaultRewards } from '../../../../components/GovVaultRewards/GovVault
 import { getBeefyApi } from '../../../data/apis/instances';
 import { useAppSelector } from '../../../../store';
 import { formatDistance } from 'date-fns';
+import copperCoin from '../../../../images/icons/copper_coin_fill.svg';
+import presentationFill from '../../../../images/icons/presentation_2_fill.svg';
+import calendarFill from '../../../../images/icons/calendar_fill.svg';
+import currencyDollar from '../../../../images/icons/currency_dollar_fill.png';
 
 const useStyles = makeStyles(styles);
 
@@ -26,29 +30,51 @@ function VaultsStatsComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
     <div className={classes.stats}>
       <div className={classes.interestStats}>
         <Box className={classes.interestStatsBox}>
-          <Box width={'33%'} className={classes.stat3}>
-            <VaultTvl vaultId={vaultId} />
-          </Box>
-          <Box className={classes.stat}>
-            <Divider className={classes.divider} orientation="vertical" />
-            <Box className={classes.stat3}>
+          <div style={{ width: '33%' }} className={classes.statsContainer}>
+            <Box className={classes.statFigures}>
+              <VaultTvl vaultId={vaultId} />
+            </Box>
+            <div className={classes.icon}>
+              {' '}
+              <img src={copperCoin} alt="icon" />
+            </div>
+          </div>
+
+          <div
+            style={{ width: '33%' }}
+            className={`${classes.statsContainer} ${classes.statsColor}`}
+          >
+            {/* <Divider className={classes.divider} orientation="vertical" /> */}
+            <Box className={classes.statFigures}>
               <YearlyApyStats vaultId={vault.id} />
             </Box>
-          </Box>
-          <Box display="flex">
-            <Divider className={classes.divider} orientation="vertical" />
-            <Box className={classes.stat3}>
+            <div className={classes.icon}>
+              <img src={presentationFill} alt="icon" />
+            </div>
+          </div>
+
+          <div style={{ width: '33%' }} className={`${classes.statsContainer}`}>
+            <Box className={classes.statFigures}>
               <DailyApyStats vaultId={vault.id} />
             </Box>
-          </Box>
+            <div className={classes.icon}>
+              <img src={calendarFill} alt="icon" />
+            </div>
+          </div>
         </Box>
       </div>
       <div className={classes.depositStats}>
         <Grid container className={classes.depositStatsBox}>
-          <Grid item xs={6} className={classes.stat1}>
-            <Box className={classes.stat4}>
-              <VaultDeposited vaultId={vaultId} />
-            </Box>
+          <Grid item xs={6} className={classes}>
+            <div className={`${classes.statsContainer}`}>
+              <Box className={classes.statFigures2}>
+                <VaultDeposited vaultId={vaultId} />
+              </Box>
+
+              <div className={classes.icon2}>
+                <img src={currencyDollar} alt="icon" />
+              </div>
+            </div>
           </Grid>
           {(isGovVault(vault) || lastHarvestStr !== 'never') && (
             <Divider flexItem={true} className={classes.divider1} orientation="vertical" />
