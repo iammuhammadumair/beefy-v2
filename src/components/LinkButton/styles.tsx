@@ -9,6 +9,7 @@ export const styles = (theme: Theme) => ({
     textDecoration: 'none',
     color: theme.palette.text.secondary,
     backgroundColor: theme.palette.background.vaults.defaultThirdColor,
+    // backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     padding: '2px 8px',
     borderRadius: '8px',
     '& $icon:first-child': {
