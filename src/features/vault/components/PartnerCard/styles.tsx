@@ -6,7 +6,7 @@ export const styles = (theme: Theme) => ({
   },
   container: {
     marginTop: '16px',
-    backgroundColor: theme.palette.background.content,
+    backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     padding: '16px',
     borderRadius: '12px',
     '&:Hover': {
@@ -17,6 +17,8 @@ export const styles = (theme: Theme) => ({
     ...theme.typography['body-lg-med'],
     color: theme.palette.text.primary,
     display: 'flex',
+    fontSize: '14px',
+    fontWeight: 600,
   },
   icon: {
     height: '24px',
