@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 import { formattedTotalApy } from '../../../../helpers/format';
 import { LinkButton } from '../../../../components/LinkButton';
-import { Card, CardContent, CardHeader, CardTitle } from '../Card';
+import { CardContent, CardHeader, CardTitle } from '../Card';
 import { styles } from './styles';
 import shield from './shield.svg';
 import { StrategyDescription } from './StrategyDescription';
@@ -35,23 +35,25 @@ function StrategyCardComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
   }
 
   return (
-    <Card>
+    <div className={classes.container}>
       <CardHeader className={classes.header}>
-        <div>
-          <CardTitle title={t('Vault-Strategy')} />
-        </div>
-        <div className={classes.cardActions}>
-          <div className={classes.cardAction}>
-            <LinkButton
-              href={`${chain.explorerUrl}/address/${stratAddr}`}
-              text={t('Strat-Address')}
-            />
+        <div className={classes.divider}>
+          <div>
+            <CardTitle title={t('Vault-Strategy')} />
           </div>
-          <div className={classes.cardAction}>
-            <LinkButton
-              href={`${chain.explorerUrl}/address/${vault.earnContractAddress}`}
-              text={t('Strat-AddressVault')}
-            />
+          <div className={classes.cardActions}>
+            <div className={classes.cardAction}>
+              <LinkButton
+                href={`${chain.explorerUrl}/address/${stratAddr}`}
+                text={t('Strat-Address')}
+              />
+            </div>
+            <div className={classes.cardAction}>
+              <LinkButton
+                href={`${chain.explorerUrl}/address/${vault.earnContractAddress}`}
+                text={t('Strat-AddressVault')}
+              />
+            </div>
           </div>
         </div>
       </CardHeader>
@@ -61,10 +63,11 @@ function StrategyCardComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
         </div>
         {showApy ? (
           <div className={classes.apysContainer}>
-            <div className={classes.apyTitle}>{t('Vault-ApyBreakdown')}</div>
+            {/* <div className={classes.apyTitle}>{t('Vault-ApyBreakdown')}</div> */}
             <div className={classes.apys}>
+              {/* <div className={classes.apysHead}> */}
               <div className={classes.apy}>
-                <div className={classes.apyLabel}>{t('Vault-ApyTotal')}</div>
+                <div className={classes.apyLabel1}>{t('Vault-ApyTotal')}</div>
                 <div className={classes.apyValue}>
                   {isBoosted ? formatted.boostedTotalApy : formatted.totalApy}
                 </div>
@@ -95,11 +98,12 @@ function StrategyCardComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
               )}
               {isBoosted && (
                 <div className={classes.apy}>
-                  <div className={classes.apyLabel}>{t('Vault-AprBoost')}</div>
+                  <div className={classes.apyLabel2}>{t('Vault-AprBoost')}</div>
                   <div className={classes.apyValue}>{formatted.boostApr}</div>
                 </div>
               )}
             </div>
+            {/* </div> */}
           </div>
         ) : null}
         <div className={classes.audits}>
@@ -115,7 +119,7 @@ function StrategyCardComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
           </div>
         </div>
       </CardContent>
-    </Card>
+    </div>
   );
 }
 
