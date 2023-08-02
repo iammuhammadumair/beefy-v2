@@ -16,13 +16,15 @@ export const styles = (theme: Theme) => ({
     justifyContent: 'space-between',
     backgroundColor: 'transparent' as const,
     borderColor: 'transparent' as const,
+  },
+  borderBottom: {
+    borderBottom: `1px solid ${theme.palette.background.default}`,
+    paddingBottom: theme.spacing(2),
     '&:Hover': {
       backgroundColor: 'transparent' as const,
       borderColor: 'transparent' as const,
       borderBottom: `1px solid ${theme.palette.background.default}`,
     },
-    borderBottom: `1px solid ${theme.palette.background.default}`,
-    paddingBottom: theme.spacing(2),
   },
   titleIcon: {
     fill: theme.palette.text.primary,

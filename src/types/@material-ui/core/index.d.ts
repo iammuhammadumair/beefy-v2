@@ -30,6 +30,7 @@ declare module '@material-ui/core/styles/createPalette' {
       defaultOutline: string;
       boostOutline: string;
       gov: string;
+      defaultThirdColor: string;
       govOutline: string;
       inactive: string;
       inactiveOutline: string;

@@ -3,6 +3,10 @@ import type { Theme } from '@material-ui/core';
 export const styles = (theme: Theme) => ({
   header: {
     display: 'flex',
+    // backgroundColor: theme.palette.background.vaults.defaultThirdColor,
+    // backgroundColor: '#353F51',
+    backgroundColor: theme.palette.background.body,
+
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column' as const,
       rowGap: '16px',
