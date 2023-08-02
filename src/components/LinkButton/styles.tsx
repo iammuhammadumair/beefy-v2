@@ -7,7 +7,7 @@ export const styles = (theme: Theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     textDecoration: 'none',
-    color: theme.palette.text.secondary,
+    color: '#7C8FAC',
     backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     // backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     padding: '2px 8px',

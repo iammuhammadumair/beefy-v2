@@ -22,6 +22,7 @@ export const Collapsable = memo<CollapsableProps>(function Collapsable({
   containerClassName,
   titleClassName,
   title,
+  borderBottom = true,
 }) {
   const [open, setOpen] = useState<boolean>(openByDefault);
 
@@ -33,7 +34,11 @@ export const Collapsable = memo<CollapsableProps>(function Collapsable({
 
   return (
     <div className={clsx(containerClassName, classes.container)}>
-      <Button fullWidth={true} onClick={handleCollapse} className={classes.title}>
+      <Button
+        fullWidth={true}
+        onClick={handleCollapse}
+        className={`${classes.title} ${borderBottom ? classes.borderBottom : 'none'} }`}
+      >
         <div className={titleClassName}>{title}</div>
         {open ? (
           <ExpandLess className={classes.titleIcon} />
