@@ -18,7 +18,7 @@ export const styles = (theme: Theme) => ({
     height: 96,
     display: 'flex',
     justifyContent: 'flex-start',
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
     borderRadius: '10px',
     border: `1px solid ${theme.palette.background.default}`,
     // padding: '16px 24px',
@@ -37,7 +37,7 @@ export const styles = (theme: Theme) => ({
     flexWrap: 'nowrap' as const,
     justifyContent: 'flex-end',
     textAlign: 'end' as const,
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
     borderRadius: '8px',
     padding: '16px 24px',
     [theme.breakpoints.down('md')]: {

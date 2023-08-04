@@ -23,7 +23,7 @@ export const styles = (theme: Theme) => ({
     color: theme.palette.text.primary,
     display: 'flex',
     justifyContent: 'flex-end',
-    fontWeight: '600',
+    fontWeight: 600,
   },
   subValue: {
     ...theme.typography['body-sm'],

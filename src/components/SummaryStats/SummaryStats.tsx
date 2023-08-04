@@ -8,7 +8,7 @@ interface SummaryStatProps {
   title: string;
   Icon: React.FC;
   value: string;
-  color: string;
+  color?: string;
 }
 
 const SummaryStat = memo<SummaryStatProps>(function SummaryStat({ title, Icon, value, color }) {

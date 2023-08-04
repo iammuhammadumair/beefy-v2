@@ -3,7 +3,7 @@ export const styles = (theme: Theme) => ({
   container: {
     width: '100%',
     padding: '16px 24px',
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
     border: '1px solid #353F51',
 
     borderRadius: '8px',

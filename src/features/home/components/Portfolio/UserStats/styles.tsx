@@ -19,15 +19,15 @@ export const styles = (theme: Theme) => ({
   value: {
     ...theme.typography['h2'],
     color: theme.palette.text.primary,
-    fontWeight: '700',
-    textAlign: 'left',
+    fontWeight: 700,
+    // textAlign: 'left',
   },
   label: {
     // ...theme.typography['subline-lg'],
     display: 'inline-flex',
     color: theme.palette.text.primary,
     fontSize: '14px',
-    fontWeight: '500',
+    fontWeight: 500,
   },
   blurred: {
     filter: 'blur(.5rem)',

@@ -1,7 +1,7 @@
 import type { Theme } from '@material-ui/core';
 export const styles = (theme: Theme) => ({
   container: {
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
     [theme.breakpoints.down('sm')]: {
       // padding: `0px 0 0px 0`,
     },

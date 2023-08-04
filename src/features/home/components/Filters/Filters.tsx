@@ -35,7 +35,7 @@ export const Filters = memo(function Filters() {
         </>
       )}
       <ExtendedFiltersButton
-        className={clsx(classes.button, classes.extended)}
+        // className={clsx(classes.button, classes.extended)}
         desktopView={desktopView}
       />
       <ClearFiltersButton className={clsx(classes.button, classes.clear)} />

@@ -29,7 +29,7 @@ export const styles = (theme: Theme) => ({
     padding: '8px 16px',
     // ...theme.typography['subline-sm'],
     color: theme.palette.text.primary,
-    fontWeight: '600',
+    fontWeight: 600,
     fontSize: '14px',
   },
   sortColumn: {

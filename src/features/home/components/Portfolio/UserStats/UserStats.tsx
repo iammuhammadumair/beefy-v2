@@ -36,7 +36,11 @@ const UserStat = memo<UserStatProps>(function UserStat({
       <div className={classes.value}>
         <span className={blurred ? classes.blurred : undefined}>{blurred ? '$100' : value}</span>
       </div>
-      <img className={classes.icon} src={imgSrc} alt="i" />
+      <img
+        //  className={classes.icon}
+        src={imgSrc}
+        alt="i"
+      />
     </div>
   );
 });

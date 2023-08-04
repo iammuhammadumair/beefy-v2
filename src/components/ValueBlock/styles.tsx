@@ -9,10 +9,10 @@ export const styles = (theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       textAlign: 'left' as const,
       fontSize: '12px',
-      fontWeight: '300',
+      fontWeight: 300,
     },
     fontSize: '22px',
-    fontWeight: '700',
+    fontWeight: 700,
   },
   label: {
     ...theme.typography['subline-sm'],

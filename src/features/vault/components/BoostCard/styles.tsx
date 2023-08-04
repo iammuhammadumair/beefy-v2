@@ -28,7 +28,7 @@ export const styles = (theme: Theme) => ({
     rowGap: '16px',
     padding: '24px 14px 15px 12px',
     borderRadius: '12px 12px 0 0',
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
     // borderBottom: `1px solid ${theme.palette.background.default}`,
     //  borderBottom: theme.spacing(2),
     // padding: theme.spacing(2),
