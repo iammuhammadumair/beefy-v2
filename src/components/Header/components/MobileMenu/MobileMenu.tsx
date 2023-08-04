@@ -33,7 +33,6 @@ export const MobileMenu = memo(function MobileMenu() {
             </div>
             <Close className={classes.cross} onClick={handleDrawerToggle} />
           </div>
-          <Divider className={classes.divider} />
           {MobileList.map(item => {
             return (
               <Fragment key={item.title}>

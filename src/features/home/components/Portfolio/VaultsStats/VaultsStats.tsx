@@ -33,28 +33,34 @@ export const VaultsStats = () => {
   }, [setIsTvlModalOpen]);
 
   return (
-    <Grid container className={classes.userStats}>
-      <Box className={`${classes.stat} ${classes.borderRight} `}>
-        <Box className={classes.labelWithIcon}>
-          <div className={classes.label}>{t('TVL')}</div>
-          <div onClick={handleTvlModalOpen}></div>
-        </Box>
-        <div className={classes.value}>
-          <ValueText value={formatBigUsd(totalTvl)} />
+    <Grid className={classes.userStats}>
+      <Box className={classes.stat}>
+        <div className="txt">
+          <Box className={classes.labelWithIcon}>
+            <div className={classes.label}>{t('TVL')}</div>
+            <div onClick={handleTvlModalOpen}></div>
+          </Box>
+          <div className={classes.value}>
+            <ValueText value={formatBigUsd(totalTvl)} />
+          </div>
         </div>
         <img className={classes.icon} src={tvlIcon} alt="i" />
       </Box>
-      <Box className={`${classes.stat} ${classes.borderRight} `}>
-        <div className={classes.label}>{t('Vaults-Title')}</div>
-        <div className={classes.value}>
-          <ValueText value={totalActiveVaults} />
+      <Box className={classes.stat}>
+        <div className="txt">
+          <div className={classes.label}>{t('Vaults-Title')}</div>
+          <div className={classes.value}>
+            <ValueText value={totalActiveVaults} />
+          </div>
         </div>
         <img className={classes.icon} src={walletIcon} alt="i" />
       </Box>
       <Box className={classes.stat}>
-        <div className={classes.label}>{t('BuyBack')}</div>
-        <div className={classes.value}>
-          <ValueText value={formatBigUsd(buyback)} />
+        <div className="txt">
+          <div className={classes.label}>{t('BuyBack')}</div>
+          <div className={classes.value}>
+            <ValueText value={formatBigUsd(buyback)} />
+          </div>
         </div>
         <img className={classes.icon} src={buybackIcon} alt="i" />
       </Box>

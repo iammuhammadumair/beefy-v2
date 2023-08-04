@@ -64,10 +64,11 @@ const NotDepositedMessage = memo<MessageProps>(function NotDepositedMessage({ ti
   const handleViewAll = useCallback(() => {
     dispatch(filteredVaultsActions.setUserCategory('all'));
   }, [dispatch]);
+  const classes = useStyles();
 
   return (
     <Message title={title} text={text}>
-      <Button onClick={handleViewAll} variant="success">
+      <Button onClick={handleViewAll} variant="success" className={classes.btn}>
         {t('NoResults-ViewAllVaults')}
       </Button>
     </Message>

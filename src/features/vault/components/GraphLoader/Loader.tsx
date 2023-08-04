@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 import React, { memo } from 'react';
-import techLoaderUrl from '../../../../images/tech-loader.gif';
+// import techLoaderUrl from '../../../../images/tech-loader.gif';
+import techLoaderUrl from '../../../../images/bifi-logos/header-logo-1.svg';
 
 const useStyles = makeStyles(() => ({
   container: {
