@@ -49,11 +49,13 @@ export const styles = (theme: Theme) => ({
   },
   btn: {
     color: theme.palette.text.primary,
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.background.cta,
     padding: '12px 24px',
-    borderRadius: '8px',
+    borderRadius: '50px',
     '&:hover': {
-      backgroundColor: '#389D44',
+      backgroundColor: theme.palette.background.cta,
+
+      // backgroundColor: '#389D44',
     },
     '&.Mui-disabled': {
       backgroundColor: 'rgba(255, 255, 255, 0.2)',

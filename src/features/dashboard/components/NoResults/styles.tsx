@@ -54,6 +54,13 @@ export const styles = (theme: Theme) => ({
     width: '100%',
     padding: '6px 12px',
     maxWidth: '250px',
+    borderRadius: '50px',
+    backgroundColor: theme.palette.background.cta,
+    borderColor: theme.palette.background.cta,
+    '&:hover': {
+      backgroundColor: theme.palette.background.cta,
+      borderColor: theme.palette.background.cta,
+    },
   },
   or: {
     ...theme.typography['subline-sm'],

@@ -15,14 +15,14 @@ import dailyYield from '../../../../../images/icons/daily_yield.png';
 const useStyles = makeStyles(styles);
 
 type UserStatProps = {
-  borderRight: boolean;
+  borderRight?: boolean;
   label: string;
   value: string;
   blurred: boolean;
   imgSrc: string;
 };
 const UserStat = memo<UserStatProps>(function UserStat({
-  borderRight,
+  // borderRight,
   label,
   value,
   blurred,
@@ -31,10 +31,12 @@ const UserStat = memo<UserStatProps>(function UserStat({
   const classes = useStyles();
 
   return (
-    <div className={`${classes.stat} ${borderRight ? classes.borderRight : ''} `}>
-      <div className={classes.label}>{label}</div>
-      <div className={classes.value}>
-        <span className={blurred ? classes.blurred : undefined}>{blurred ? '$100' : value}</span>
+    <div className={classes.stat}>
+      <div className="txt">
+        <div className={classes.label}>{label}</div>
+        <div className={classes.value}>
+          <span className={blurred ? classes.blurred : undefined}>{blurred ? '$100' : value}</span>
+        </div>
       </div>
       <img
         //  className={classes.icon}

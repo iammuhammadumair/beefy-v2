@@ -21,10 +21,10 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'center',
-    maxWidth: theme.breakpoints.values.lg,
+    // maxWidth: theme.breakpoints.values.lg,
   },
   userOnDashboard: {
-    backgroundColor: theme.palette.background.alternativeFooterHeader,
+    // backgroundColor: theme.palette.background.alternativeFooterHeader,
   },
   nav: {
     display: 'flex',

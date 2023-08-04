@@ -1,6 +1,6 @@
-import type { Theme } from '@material-ui/core';
-
-export const styles = (theme: Theme) => ({
+// import type { Theme } from '@material-ui/core';
+// theme: Theme
+export const styles = () => ({
   container: {
     borderRadius: '12px',
     '&.MuiPaper-elevation1': {

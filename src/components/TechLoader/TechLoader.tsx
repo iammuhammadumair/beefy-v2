@@ -1,8 +1,10 @@
 import React, { memo } from 'react';
 import { makeStyles } from '@material-ui/core';
 import { styles } from './styles';
-import loadingImage from '../../images/tech-loader.gif';
+// import loadingImage from '../../images/tech-loader.gif';
+import loadingImage from '../../images/bifi-logos/header-logo-1.svg';
 
+// /src/images/bifi-logos/header-logo-1.svg
 const useStyles = makeStyles(styles);
 
 export type TechLoaderProps = {

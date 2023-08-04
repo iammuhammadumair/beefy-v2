@@ -7,7 +7,9 @@ import { askForWalletConnection, doDisconnectWallet } from '../../../data/action
 import { selectWalletAddressIfKnown } from '../../../data/selectors/wallet';
 import { Section } from '../../../../components/Section';
 import { styles } from './styles';
-import iconEmptyState from '../../../../images/empty-state.svg';
+// import iconEmptyState from '../../../../images/empty-state.svg';
+import iconEmptyState from '../../../../images/bifi-logos/header-logo-1.svg';
+
 import { AddressInput } from '../AddressInput';
 
 const useStyles = makeStyles(styles);
