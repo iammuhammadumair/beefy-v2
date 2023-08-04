@@ -12,6 +12,7 @@ interface CollapsableProps {
   containerClassName?: string;
   titleClassName?: string;
   title: string;
+  borderBottom: boolean;
 }
 
 const useStyles = makeStyles(styles);
