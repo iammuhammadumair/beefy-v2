@@ -9,12 +9,12 @@ export const styles = (theme: Theme) => ({
   containerBoost: {
     padding: theme.spacing(3),
     borderRadius: '12px',
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
     border: `1px solid ${theme.palette.background.default}`,
     display: 'flex',
     flexDirection: 'column' as const,
     rowGap: '16px',
-    border: `1px solid ${theme.palette.background.default}`,
+    // border: `1px solid ${theme.palette.background.default}`,
   },
   containerExpired: {
     display: 'flex',

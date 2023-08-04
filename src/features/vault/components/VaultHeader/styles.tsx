@@ -41,7 +41,7 @@ export const styles = (theme: Theme) => ({
       color: theme.palette.text.primary,
       textTransform: 'uppercase' as const,
     },
-    fontWeight: '500',
+    fontWeight: 500,
     fontSize: '12px',
   },
   shareHolder: {

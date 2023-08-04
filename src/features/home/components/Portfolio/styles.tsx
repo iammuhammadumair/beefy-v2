@@ -1,6 +1,6 @@
 export const styles = theme => ({
   portfolio: {
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
     padding: `${40 - 24}px 0 40px 0`,
     marginBottom: theme.spacing(4),
   },

@@ -6,6 +6,6 @@ export const styles = (theme: Theme) => ({
     '&.MuiPaper-elevation1': {
       boxShadow: '0px 0px 32px 0px #0000001A',
     },
-    backgroundColor: theme.palette.background.body,
+    // backgroundColor: theme.palette.background.body,
   },
 });

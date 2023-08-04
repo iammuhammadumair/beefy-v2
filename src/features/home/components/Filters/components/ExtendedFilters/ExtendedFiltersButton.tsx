@@ -18,7 +18,7 @@ export type ExtendedFiltersButtonProps = {
 export const ExtendedFiltersButton = memo<ExtendedFiltersButtonProps>(
   function ExtendedFiltersButton({
     desktopView,
-    //className
+    // className
   }) {
     // const { t } = useTranslation();
     const anchorEl = useRef();
