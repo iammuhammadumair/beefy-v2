@@ -4,7 +4,8 @@ export const styles = (theme: Theme) => ({
   container: {
     padding: 24,
     borderRadius: '12px',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.body,
+    border: `1px solid ${theme.palette.background.default}`,
   },
   content: {
     padding: 16,
@@ -15,12 +16,17 @@ export const styles = (theme: Theme) => ({
     justifyContent: 'space-between',
     backgroundColor: 'transparent' as const,
     borderColor: 'transparent' as const,
+  },
+  borderBottom: {
+    borderBottom: `1px solid ${theme.palette.background.default}`,
+    paddingBottom: theme.spacing(2),
     '&:Hover': {
       backgroundColor: 'transparent' as const,
       borderColor: 'transparent' as const,
+      borderBottom: `1px solid ${theme.palette.background.default}`,
     },
   },
   titleIcon: {
-    fill: '#999CB3',
+    fill: theme.palette.text.primary,
   },
 });

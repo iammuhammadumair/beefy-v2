@@ -1,11 +1,13 @@
+import { theme } from '../../../../theme';
+
 export const styles = () => ({
   container: {
     display: 'flex',
-    backgroundColor: '#242737',
+    backgroundColor: theme.palette.background.cta,
     alignItems: 'center',
-    borderRadius: '8px',
+    borderRadius: '50px',
   },
   open: {
-    backgroundColor: '#30354F',
+    backgroundColor: theme.palette.background.cta,
   },
 });

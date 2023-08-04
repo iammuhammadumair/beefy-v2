@@ -121,10 +121,12 @@ const theme = createTheme(
         light: '#313759',
         content: '#2D3153',
         contentLight: '#F4F4F4',
-        header: '#121212',
-        footer: '#121212',
+        header: '#2A3447', //theme color
+        footer: '#2A3447', //theme color
         alternativeFooterHeader: '#020203',
-        cta: '#59A662',
+        cta: '#6391FF',
+        secondColor: '#253662',
+        // cta: '#59A662',
         appBG: '#1B1E31',
         filters: {
           active: '#4C5480',
@@ -134,7 +136,9 @@ const theme = createTheme(
         },
         vaults: {
           default: '#2D3153',
-          defaultOutline: '#363B63',
+          defaultOutline: 'rgba(255, 255, 255, 1)',
+          // defaultOutline: '#363B63',
+          defaultThirdColor: '#353F51',
           boostOutline: '#DB8332',
           gov: '#342763',
           govOutline: '#42477B',
@@ -162,6 +166,9 @@ const theme = createTheme(
         dark: '#999CB3',
         middle: '#D0D0DA',
         light: '#F5F5FF',
+        borderColor: '#364262',
+        darakShade: '#23262F',
+        primaryLight: 'rgba(99, 145, 255, 1)',
       },
     },
     typography: {

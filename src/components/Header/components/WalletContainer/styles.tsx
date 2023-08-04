@@ -5,7 +5,7 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: '8px',
+    borderRadius: '50px',
     padding: '8px 16px',
   },
   address: {
@@ -27,7 +27,7 @@ export const styles = (theme: Theme) => ({
     },
   },
   known: {
-    border: `2px solid #D19847`,
+    border: `2px solid transparent`,
     '& $address': {
       color: theme.palette.text.secondary,
     },
@@ -38,6 +38,7 @@ export const styles = (theme: Theme) => ({
   connected: {
     borderColor: theme.palette.background.cta,
     backgroundColor: '#242737',
+    borderRadius: '50px',
   },
   loading: {
     paddingTop: '4px',

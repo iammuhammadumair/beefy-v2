@@ -2,9 +2,9 @@ import type { Theme } from '@material-ui/core';
 
 export const styles = (theme: Theme) => ({
   container: {
-    backgroundColor: theme.palette.background.content,
+    backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     padding: '16px',
-    borderRadius: '12px',
+    borderRadius: '8px',
   },
   titleContainer: {
     display: 'flex',
@@ -32,7 +32,7 @@ export const styles = (theme: Theme) => ({
   },
   description: {
     ...theme.typography['body-lg'],
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
     marginTop: '16px',
   },
 });

@@ -40,4 +40,14 @@ export const styles = (theme: Theme) => ({
       marginTop: 0,
     },
   },
+  titleContainer: {
+    height: '100px',
+    [theme.breakpoints.down('md')]: {
+      height: '150px',
+    },
+    backgroundColor: theme.palette.background.secondColor,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'start',
+  },
 });

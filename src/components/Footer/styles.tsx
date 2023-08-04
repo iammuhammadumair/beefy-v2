@@ -8,17 +8,20 @@ export const styles = (theme: Theme) => ({
     justifyContent: 'flex-start',
     minHeight: '100vh',
     width: '100%',
-    backgroundColor: theme.palette.background.appBG,
+    // backgroundColor: theme.palette.background.appBG,
+    backgroundColor: 'transparent',
   },
   wrapperTop: {
     marginBottom: 'auto',
   },
   footer: {
-    background: theme.palette.background.footer,
+    // background: theme.palette.background.footer,
+    backgroundColor: 'transparent',
     padding: `${theme.spacing(5)}px`,
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'center',
+    maxWidth: theme.breakpoints.values.lg,
   },
   userOnDashboard: {
     backgroundColor: theme.palette.background.alternativeFooterHeader,

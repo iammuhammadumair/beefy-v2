@@ -17,6 +17,7 @@ declare module '@material-ui/core/styles/createPalette' {
     header: string;
     alternativeFooterHeader: string;
     cta: string;
+    secondColor: string;
     appBG: string;
     filters: {
       active: string;
@@ -29,6 +30,7 @@ declare module '@material-ui/core/styles/createPalette' {
       defaultOutline: string;
       boostOutline: string;
       gov: string;
+      defaultThirdColor: string;
       govOutline: string;
       inactive: string;
       inactiveOutline: string;
@@ -56,6 +58,9 @@ declare module '@material-ui/core/styles/createPalette' {
     dark: string;
     middle: string;
     light: string;
+    borderColor: string;
+    darakShade: string;
+    primaryLight: string;
   }
 }
 

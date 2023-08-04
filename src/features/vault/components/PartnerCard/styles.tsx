@@ -6,17 +6,19 @@ export const styles = (theme: Theme) => ({
   },
   container: {
     marginTop: '16px',
-    backgroundColor: theme.palette.background.content,
+    backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     padding: '16px',
     borderRadius: '12px',
     '&:Hover': {
-      backgroundColor: theme.palette.background.vaults.defaultOutline,
+      backgroundColor: theme.palette.background.vaults.defaultThirdColor,
     },
   },
   title: {
     ...theme.typography['body-lg-med'],
     color: theme.palette.text.primary,
     display: 'flex',
+    fontSize: '14px',
+    fontWeight: 600,
   },
   icon: {
     height: '24px',

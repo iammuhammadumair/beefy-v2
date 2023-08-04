@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Popover } from '../../../../components/Popover';
 import { RISKS } from '../../../../config/risk';
-import { Card } from '../Card';
-import { CardHeader } from '../Card/CardHeader';
+// import { Card } from '../Card';
+// import { CardHeader } from '../Card/CardHeader';
 import { CardContent } from '../Card/CardContent';
 import { styles } from './styles';
 import up from './up.svg';
@@ -22,10 +22,12 @@ function SafetyCardComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
   const vault = useAppSelector(state => selectVaultById(state, vaultId));
 
   return (
-    <Card>
-      <CardHeader className={classes.header}>
-        <div className={classes.safetyLabel}>{t('Safety-Score1')}</div>
-      </CardHeader>
+    <div className={classes.card}>
+      <div className={classes.header}>
+        <div className={classes.divider}>
+          <div className={classes.safetyLabel}>{t('Safety-Score1')}</div>
+        </div>
+      </div>
       <CardContent>
         <div className={classes.riskList}>
           {vault.risks.map(risk => (
@@ -60,6 +62,7 @@ function SafetyCardComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
           titleClassName={classes.titleClassName}
           containerClassName={classes.howItWorksContainer}
           title={t('How-It-Works')}
+          borderBottom={false}
         >
           <div className={classes.notes}>
             <p>{t('Safety-HigherSafer')}</p>
@@ -67,7 +70,7 @@ function SafetyCardComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
           </div>
         </Collapsable>
       </CardContent>
-    </Card>
+    </div>
   );
 }
 

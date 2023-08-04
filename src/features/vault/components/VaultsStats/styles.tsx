@@ -18,15 +18,18 @@ export const styles = (theme: Theme) => ({
     height: 96,
     display: 'flex',
     justifyContent: 'flex-start',
-    backgroundColor: theme.palette.background.default,
-    borderRadius: '8px',
-    padding: '16px 24px',
+    backgroundColor: theme.palette.background.body,
+    borderRadius: '10px',
+    border: `1px solid ${theme.palette.background.default}`,
+    // padding: '16px 24px',
     [theme.breakpoints.down('md')]: {
       padding: '16px',
     },
   },
   depositStats: {
     width: '100%',
+    borderRadius: '10px',
+    border: `1px solid ${theme.palette.background.default}`,
   },
   depositStatsBox: {
     height: 96,
@@ -34,7 +37,7 @@ export const styles = (theme: Theme) => ({
     flexWrap: 'nowrap' as const,
     justifyContent: 'flex-end',
     textAlign: 'end' as const,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.body,
     borderRadius: '8px',
     padding: '16px 24px',
     [theme.breakpoints.down('md')]: {
@@ -46,6 +49,7 @@ export const styles = (theme: Theme) => ({
   stat: {
     display: 'flex',
     width: '33%',
+    backgroundColor: 'red',
     paddingTop: 0,
     paddingBottom: 0,
     marginRight: theme.spacing(4),
@@ -64,6 +68,41 @@ export const styles = (theme: Theme) => ({
       justifyContent: 'flex-start',
     },
   },
+  statsContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  statsColor: {
+    backgroundColor: '#6391FF',
+  },
+  icon: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingRight: '10px',
+  },
+  icon2: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    // paddingRight: 'px',
+  },
+
+  statFigures: {
+    display: 'flex',
+    flexDirection: 'column' as const,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    padding: '20px',
+  },
+  statFigures2: {
+    display: 'flex',
+    flexDirection: 'column' as const,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    padding: '10px',
+  },
+  statsBody: {},
   stat3: {
     display: 'flex',
     flexDirection: 'column' as const,
@@ -74,10 +113,11 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column' as const,
     justifyContent: 'flex-start',
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
     [theme.breakpoints.down('md')]: {
       alignItems: 'flex-start',
     },
+    padding: '8px 0 0 12px',
   },
   divider: {
     marginRight: theme.spacing(3),

@@ -6,6 +6,8 @@ export const styles = (theme: Theme) => ({
     flexWrap: 'wrap' as const,
     rowGap: '16px',
     columnGap: '16px',
+    marginBottom: '32px',
+    padding: '20px 10px',
   },
   userCategory: {
     width: '100%',
