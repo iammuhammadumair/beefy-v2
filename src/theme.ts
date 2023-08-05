@@ -116,7 +116,7 @@ const theme = createTheme(
       type: 'dark',
       primary: { main: '#59A662', light: '#CDF7D2', dark: '#004708' },
       background: {
-        default: '#232743',
+        default: '#353F51',
         paper: '#232743',
         light: '#313759',
         content: '#2D3153',
@@ -126,8 +126,9 @@ const theme = createTheme(
         alternativeFooterHeader: '#020203',
         cta: '#6391FF',
         secondColor: '#253662',
+        body: '#2A3447',
         // cta: '#59A662',
-        appBG: '#1B1E31',
+        appBG: '#2A3447',
         filters: {
           active: '#4C5480',
           inactive: '#262A40',

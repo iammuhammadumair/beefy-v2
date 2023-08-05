@@ -16,7 +16,7 @@ export const styles = (theme: Theme) => ({
     color: '#8A8EA8',
     backgroundColor: 'inherit',
     border: 'none',
-    borderRadius: '50px',
+    // borderRadius: '50px',
     boxShadow: 'none',
     cursor: 'pointer',
     margin: 0,
@@ -30,11 +30,27 @@ export const styles = (theme: Theme) => ({
     '&:active, &:hover:active': {
       color: theme.palette.text.primary,
     },
+    fontWeight: 700,
+    fontSize: '20px',
   },
   selected: {
     pointerEvents: 'none' as const,
-    color: theme.palette.text.primaryLight,
-    backgroundColor: `${theme.palette.background.vaults.defaultOutline} !important`,
+    color: theme.palette.text.primary,
+    borderBottom: `1px solid ${theme.palette.text.primary}`,
+    paddingBottom: theme.spacing(2),
+    // position: 'relative',
+    '&:hover': {
+      color: theme.palette.text.primaryLight,
+      backgroundColor: `${theme.palette.background.vaults.defaultOutline} !important`,
+    },
+  },
+  selected2: {
+    pointerEvents: 'none' as const,
+    color: theme.palette.text.primary,
+    backgroundColor: '#6391FF',
+    borderRadius: '8px',
+    // padding:'8px',
+
     '&:hover': {
       color: theme.palette.text.primaryLight,
       backgroundColor: `${theme.palette.background.vaults.defaultOutline} !important`,

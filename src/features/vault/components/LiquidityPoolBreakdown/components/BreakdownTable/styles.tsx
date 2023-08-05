@@ -5,24 +5,30 @@ export const styles = (theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column' as const,
     justifyContent: 'center',
-    backgroundImage:
-      'linear-gradient(to bottom, #2D3153 0%, #2D3153 50%, #363B63 50%, #363B63 100%)',
-    borderBottomLeftRadius: '8px',
-    borderBottomRightRadius: '8px',
-    [theme.breakpoints.up('lg')]: {
-      borderBottomLeftRadius: 0,
-    },
+    // backgroundImage:
+    //   'linear-gradient(to bottom, #2D3153 0%, #2D3153 50%, #363B63 50%, #363B63 100%)',
+    backgroundColor: theme.palette.background.body,
+    // borderRadius: '8px',
+    // borderBottomLeftRadius: '8px',
+    // borderBottomRightRadius: '8px',
+    // [theme.breakpoints.up('lg')]: {
+    //   borderBottomLeftRadius: 0,
+    // },
+    // borderRadius:'20px',
+    // padding:'10px'
   },
   cell: {
     whiteSpace: 'nowrap' as const,
     overflow: 'hidden',
     textOverflow: 'ellipsis',
+    // padding: '4px',
+    paddingLeft: '5px',
   },
   row: {
-    backgroundColor: '#2D3153',
+    backgroundColor: theme.palette.background.body,
     display: 'grid',
     gridTemplateColumns: '35fr 35fr 30fr',
-    padding: '16px 24px',
+    padding: '16px 10px 0 0',
     borderBottom: 'solid 2px #363B63',
     alignItems: 'center',
     columnGap: '16px',
@@ -36,18 +42,23 @@ export const styles = (theme: Theme) => ({
   header: {
     ...theme.typography['subline-sm'],
     color: '#999CB3',
+    backgroundColor: theme.palette.background.secondColor,
+    borderTopRightRadius: '10px',
+    borderTopLeftRadius: '10px',
   },
   footer: {
     backgroundColor: '#363B63',
-    borderBottomLeftRadius: '8px',
-    borderBottomRightRadius: '8px',
+    borderBottomRightRadius: '10px',
+    borderBottomLeftRadius: '10px',
     [theme.breakpoints.up('lg')]: {
       borderBottomLeftRadius: 0,
     },
+    backgroundColor: '#353F51',
   },
   asset: {
     display: 'flex',
     alignItems: 'center',
+    // padingRight:'5px',
   },
   icon: {
     width: '32px',

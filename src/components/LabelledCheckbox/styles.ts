@@ -11,7 +11,9 @@ export const styles = (theme: Theme) => ({
     userSelect: 'none' as const,
   },
   icon: {
-    color: '#848BAD',
+    color: 'white',
+    backgroundColor: 'white',
+    borderRadius: '4px',
   },
   label: {
     display: 'flex',
@@ -20,6 +22,7 @@ export const styles = (theme: Theme) => ({
   checked: {
     '& $icon': {
       color: '#F5F5FF',
+      backgroundColor: '#6391FF',
     },
   },
 });
