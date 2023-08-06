@@ -4,8 +4,8 @@ export const styles = (theme: Theme) => ({
   tabs: {
     borderRadius: '12px 12px 0 0',
     display: 'flex',
-    width: '100%',
-    background: '#111321',
+    width: '10  0%',
+    background: theme.palette.background.body,
   },
   tab: {
     ...theme.typography['body-lg-med'],
@@ -43,7 +43,7 @@ export const styles = (theme: Theme) => ({
     cursor: 'default' as const,
     pointerEvents: 'none' as const,
     '&::after': {
-      backgroundColor: '#999CB3',
+      backgroundColor: '#6391FF',
     },
   },
 });

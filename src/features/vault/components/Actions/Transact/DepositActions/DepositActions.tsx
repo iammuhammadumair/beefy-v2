@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core';
+import { Box, makeStyles } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 import { styles } from './styles';
 import { memo, useCallback, useMemo, useState } from 'react';
@@ -44,7 +44,12 @@ export const DepositActions = memo<DepositActionsProps>(function DepositActions(
   const connectedChainId = useAppSelector(selectCurrentChainId);
 
   if (!isWalletConnected) {
-    return <ActionConnect className={className} />;
+    return (
+      <Box display="flex" justifyContent="center" mt={2}>
+        {' '}
+        <ActionConnect className={className} />
+      </Box>
+    );
   }
 
   if (option && option.chainId !== connectedChainId) {

@@ -17,5 +17,9 @@ export type ValueProps = {
 
 export const Value = memo<ValueProps>(function Value({ children }) {
   const classes = useStyles();
-  return <div className={classes.value}>{children}</div>;
+  return (
+    <div style={{ color: '#FFFFFFB2' }} className={classes.value}>
+      {children}
+    </div>
+  );
 });

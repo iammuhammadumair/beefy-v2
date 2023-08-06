@@ -1,4 +1,6 @@
-export const styles = () => ({
+import type { Theme } from '@material-ui/core';
+
+export const styles = (theme: Theme) => ({
   button: {
     padding: '8px 12px',
     margin: 0,
@@ -11,6 +13,7 @@ export const styles = () => ({
     alignItems: 'center',
     gap: '2px',
     pointerEvents: 'none' as const,
+    backgroundColor: theme.palette.background.secondColor,
   },
   buttonMore: {
     padding: '8px 6px 8px 12px',

@@ -19,7 +19,7 @@ export const ActionConnect = memo<ActionButtonProps>(function ActionConnect({ cl
 
   return (
     <Button
-      variant="success"
+      variant="primary"
       fullWidth={true}
       borderless={true}
       className={className}

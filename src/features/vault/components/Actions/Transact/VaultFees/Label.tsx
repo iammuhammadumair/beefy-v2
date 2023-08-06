@@ -17,5 +17,9 @@ export type LabelProps = { children: ReactNode };
 
 export const Label = memo<LabelProps>(function Label({ children }) {
   const classes = useStyles();
-  return <div className={classes.label}>{children}</div>;
+  return (
+    <div style={{ color: '#FFFFFFB2' }} className={classes.label}>
+      {children}
+    </div>
+  );
 });

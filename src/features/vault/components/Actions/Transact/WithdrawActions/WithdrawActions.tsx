@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core';
+import { Box, makeStyles } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 import { styles } from './styles';
 import { memo, useCallback, useMemo, useState } from 'react';
@@ -42,10 +42,20 @@ export const WithdrawActions = memo(function WithdrawActions() {
   const isGovVault = useAppSelector(state => selectIsVaultGov(state, vaultId));
 
   if (isGovVault) {
-    return <WithdrawActionsGov />;
+    return (
+      <Box display="flex" justifyContent="center">
+        {' '}
+        <WithdrawActionsGov />
+      </Box>
+    );
   }
 
-  return <WithdrawActionsStandard />;
+  return (
+    <Box display="flex" justifyContent="center">
+      {' '}
+      <WithdrawActionsStandard />{' '}
+    </Box>
+  );
 });
 
 export const WithdrawActionsStandard = memo(function WithdrawActionsStandard() {
