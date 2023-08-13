@@ -47,7 +47,7 @@ export const styles = (theme: Theme) => ({
     borderTopLeftRadius: '10px',
   },
   footer: {
-    backgroundColor: '#363B63',
+    // backgroundColor: '#363B63',
     borderBottomRightRadius: '10px',
     borderBottomLeftRadius: '10px',
     [theme.breakpoints.up('lg')]: {
