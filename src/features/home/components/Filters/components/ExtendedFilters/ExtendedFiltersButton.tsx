@@ -1,9 +1,9 @@
-import { memo, useCallback, useRef, useState } from 'react';
-// import clsx from 'clsx';
+import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core';
-// import { Button } from '../../../../../../components/Button';
-import { styles } from './styles';
 // import { useTranslation } from 'react-i18next';
+import { memo, useCallback, useRef, useState } from 'react';
+import { Button } from '../../../../../../components/Button';
+import { styles } from './styles';
 import { Sidebar } from './Sidebar';
 import { ExtendedFilters } from './ExtendedFilters';
 import { Dropdown } from '../../../../../../components/Dropdown';
@@ -13,13 +13,10 @@ const useStyles = makeStyles(styles);
 
 export type ExtendedFiltersButtonProps = {
   desktopView: boolean;
-  // className?: string;
+  className?: string;
 };
 export const ExtendedFiltersButton = memo<ExtendedFiltersButtonProps>(
-  function ExtendedFiltersButton({
-    desktopView,
-    // className
-  }) {
+  function ExtendedFiltersButton({ desktopView, className }) {
     // const { t } = useTranslation();
     const anchorEl = useRef();
     const [isOpen, setIsOpen] = useState(false);
@@ -30,15 +27,15 @@ export const ExtendedFiltersButton = memo<ExtendedFiltersButtonProps>(
     }, [setIsOpen]);
 
     const handleOpen = useCallback(() => {
-      console.log('check');
-      console.log('desktop =>', this.desktopView);
+      // console.log('check');
+      // console.log('desktop =>', desktopView);
 
       setIsOpen(true);
-    }, [setIsOpen]);
+    }, [isOpen]);
 
     return (
       <>
-        {/* <Button
+        <Button
           className={clsx(className)}
           variant="filter"
           size="sm"
@@ -46,9 +43,9 @@ export const ExtendedFiltersButton = memo<ExtendedFiltersButtonProps>(
           onClick={handleOpen}
           active={isOpen}
         >
-          {t('Filter-Btn')}
-        </Button> */}
-        <img alt="snapshot" src={FilterIcon} onClick={handleOpen} className={classes.filterBtn} />
+          {/* {t('Filter-Btn')} */}
+          <img alt="snapshot" src={FilterIcon} onClick={handleOpen} className={classes.filterBtn} />
+        </Button>
         {desktopView ? (
           <Dropdown anchorEl={anchorEl} open={isOpen} onClose={handleClose} placement="bottom-end">
             <ExtendedFilters desktopView={true} />

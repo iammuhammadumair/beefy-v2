@@ -18,7 +18,8 @@ export const styles = (theme: Theme) => ({
     },
   },
   vaultRetired: {
-    backgroundColor: '#1B1E31',
+    // backgroundColor: '#1B1E31',
+    backgroundColor: 'transparent',
   },
   vaultEarnings: {
     backgroundColor: '#322460',
