@@ -7,7 +7,9 @@ import { styles } from './styles';
 import { ReactComponent as WalletIcon } from '../../../../images/icons/wallet_fill.svg';
 import { ReactComponent as VaultIcon } from '../../../../images/icons/currency_dollar_fill.svg';
 import { ReactComponent as DailyIcon } from '../../../../images/icons/coin_fill.svg';
-import { ReactComponent as BifiIcon } from '../../../../images/icons/bifi.svg';
+// import { ReactComponent as BifiIcon } from '../../../../images/icons/bifi.svg';
+import { ReactComponent as BifiIcon } from '../../../../images/icons/BIFI-TOKEN-1.svg';
+
 import { useAppSelector } from '../../../../store';
 import { selectTreasuryStats } from '../../../data/selectors/treasury';
 

@@ -7,6 +7,9 @@ import { selectFilterVaultType } from '../../../../../data/selectors/filtered-va
 import type { FilteredVaultsState } from '../../../../../data/reducers/filtered-vaults';
 import { filteredVaultsActions } from '../../../../../data/reducers/filtered-vaults';
 import { TYPE_OPTIONS } from './type-options';
+import { styles } from './styles';
+import { makeStyles } from '@material-ui/core';
+const useStyles = makeStyles(styles);
 
 export type VaultTypeButtonFilterProps = {
   className?: string;
@@ -16,6 +19,8 @@ export const VaultTypeButtonFilter = memo<VaultTypeButtonFilterProps>(
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const allKey = 'all';
+    const classes = useStyles();
+
     const options: Record<string, string> = useMemo(
       () =>
         Object.fromEntries(
@@ -38,9 +43,11 @@ export const VaultTypeButtonFilter = memo<VaultTypeButtonFilterProps>(
         value={value}
         options={options}
         onChange={handleChange}
-        buttonsClass={className}
         fullWidth={false}
         untoggleValue={allKey}
+        buttonsClass={className}
+        buttonClass={classes.button}
+        selectedClass={classes.selected}
       />
     );
   }

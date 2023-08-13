@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 import { Clear } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core';
 import { styles } from './styles';
+import clsx from 'clsx';
 
 const useStyles = makeStyles(styles);
 
@@ -30,7 +31,7 @@ export const ClearFiltersButton = memo<ClearFiltersButtonProps>(function ClearFi
 
   return (
     <Button
-      className={className}
+      className={clsx(className, classes.button)}
       variant="filter"
       size="sm"
       disabled={!active}

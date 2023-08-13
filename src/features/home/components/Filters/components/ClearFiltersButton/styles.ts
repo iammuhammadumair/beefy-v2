@@ -1,6 +1,9 @@
 import type { Theme } from '@material-ui/core';
 
 export const styles = (theme: Theme) => ({
+  button: {
+    borderRadius: '50px',
+  },
   icon: {
     marginRight: '8px',
   },
@@ -24,7 +27,7 @@ export const styles = (theme: Theme) => ({
       backgroundColor: '#DB5932',
       width: '20px',
       height: '20px',
-      borderRadius: '50%',
+      borderRadius: '50px',
       color: '#fff',
     },
   },
