@@ -32,7 +32,8 @@ import { useAppDispatch, useAppSelector } from '../../store';
 import { selectShouldInitProposals } from '../../features/data/selectors/data-loader';
 import { fetchActiveProposals } from '../../features/data/actions/proposal';
 import { UnreadProposalsDot } from './components/Badges/UnreadProposalsDot';
-import headerLogoMobile from '../../images/bifi-logos/header-logo-notext.svg';
+// import header from '../../images/bifi-logos/header-logo-notext.svg';
+
 import headerLogoDesktop from '../../images/bifi-logos/header-logo-1.svg';
 
 const useStyles = makeStyles(styles);
@@ -63,7 +64,7 @@ export const Header = memo(function Header() {
           <Toolbar className={classes.content} disableGutters={true}>
             <div className={classes.flex}>
               <Link className={classes.beefy} to="/">
-                <img alt="BIFI" src={isMobile ? headerLogoMobile : headerLogoDesktop} />
+                <img alt="BIFI" src={isMobile ? headerLogoDesktop : headerLogoDesktop} />
               </Link>
               <Hidden mdDown>
                 <NavItem title={'Header-Vaults'} url="/" Icon={VaultsIcon} />

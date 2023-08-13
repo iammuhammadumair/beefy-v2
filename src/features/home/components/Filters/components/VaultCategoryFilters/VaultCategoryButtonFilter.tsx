@@ -7,14 +7,21 @@ import { selectFilterVaultCategory } from '../../../../../data/selectors/filtere
 import type { FilteredVaultsState } from '../../../../../data/reducers/filtered-vaults';
 import { filteredVaultsActions } from '../../../../../data/reducers/filtered-vaults';
 import { CATEGORY_OPTIONS } from './category-options';
+import { styles } from './styles';
+import { makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles(styles);
 
 export type VaultCategoryButtonFilterProps = {
   className?: string;
+  selected?: string;
 };
 export const VaultCategoryButtonFilter = memo<VaultCategoryButtonFilterProps>(
   function VaultCategoryButtonFilter({ className }) {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
+    const classes = useStyles();
+
     const allKey = 'all';
     const options: Record<string, string> = useMemo(
       () =>
@@ -34,15 +41,18 @@ export const VaultCategoryButtonFilter = memo<VaultCategoryButtonFilterProps>(
       },
       [dispatch]
     );
-
     return (
       <ToggleButtons
         value={value}
         options={options}
         onChange={handleChange}
-        buttonsClass={className}
+        // buttonsClass={classes.button}
+        // selectedClass={classes.selected}
         fullWidth={false}
         untoggleValue={allKey}
+        buttonsClass={className}
+        buttonClass={classes.button}
+        selectedClass={classes.selected}
       />
     );
   }

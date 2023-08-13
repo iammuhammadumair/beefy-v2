@@ -29,7 +29,7 @@ const correctPlatforms = {
   based: 'Based',
   bdollar: 'bDollar',
   beamswap: 'Beamswap',
-  beefy: 'Beefy',
+  beefy: 'Moovee',
   beethovenx: 'Beethoven X',
   belt: 'Belt',
   betu: 'BETU',
