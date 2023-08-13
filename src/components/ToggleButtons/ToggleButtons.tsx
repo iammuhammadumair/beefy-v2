@@ -27,7 +27,7 @@ export type ToggleButtonsProps = {
   ButtonComponent?: FC<ToggleButtonProps>;
   /** set this to 'all' key */
   untoggleValue?: string;
-  buttonType: string;
+  buttonType?: string;
 };
 
 export const ToggleButton = memo<ToggleButtonProps>(function ToggleButton({
