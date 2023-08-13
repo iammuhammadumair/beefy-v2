@@ -13,7 +13,10 @@ export const styles = (theme: Theme) => ({
   },
   selectLabel: {
     ...theme.typography['body-lg'],
-    color: theme.palette.text.dark,
+    color: theme.palette.text.primary,
+    fontWeight: 600,
+    fontSize: '16px',
+    marginBottom: '12px',
   },
   availableLabel: {
     ...theme.typography['body-sm'],
@@ -30,15 +33,17 @@ export const styles = (theme: Theme) => ({
     gap: '12px',
   },
   links: {
-    marginTop: '12px',
+    marginTop: '26px',
   },
   quote: {
     marginTop: '12px',
   },
   actions: {
-    marginTop: '24px',
+    marginTop: '28px',
   },
   fees: {
     marginTop: '24px',
+    border: `1px solid ${theme.palette.background.default}`,
+    backgroundColor: theme.palette.background.secondColor,
   },
 });

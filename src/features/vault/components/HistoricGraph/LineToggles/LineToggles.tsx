@@ -91,10 +91,10 @@ type LineToggleLabelProps = {
   color: string;
 };
 const LineToggleLabel = memo<LineToggleLabelProps>(function LineToggleLabel({ text, color }) {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <>
-      <span style={{ backgroundColor: color }} className={classes.toggleLabelLine} />
+      <span style={{ backgroundColor: color }} />
       {text}
     </>
   );

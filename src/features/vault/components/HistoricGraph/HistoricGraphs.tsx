@@ -31,10 +31,12 @@ export const HistoricGraphs = memo<HistoricGraphsProps>(function HistoricGraphs(
   const [stat, setStat] = useState<ChartStat>(() => getDefaultStat(availableStats));
 
   return (
-    <Card>
+    <Card className={classes.container}>
       <CardHeader className={classes.header}>
-        <CardTitle title={t('Graph-RateHist')} />
-        <StatSwitcher stat={stat} availableStats={availableStats} onChange={setStat} />
+        <div className={classes.titleText}>
+          <CardTitle title={t('Graph-RateHist')} />
+          <StatSwitcher stat={stat} availableStats={availableStats} onChange={setStat} />
+        </div>
       </CardHeader>
       <CardContent className={classes.content}>
         <GraphWithControls vaultId={vaultId} oracleId={oracleId} stat={stat} />

@@ -27,6 +27,7 @@ export type ToggleButtonsProps = {
   ButtonComponent?: FC<ToggleButtonProps>;
   /** set this to 'all' key */
   untoggleValue?: string;
+  buttonType: string;
 };
 
 export const ToggleButton = memo<ToggleButtonProps>(function ToggleButton({
@@ -58,6 +59,7 @@ export const ToggleButtons = memo<ToggleButtonsProps>(function ToggleButtons({
   onChange,
   ButtonComponent = ToggleButton,
   untoggleValue,
+  buttonType = 'underline',
 }) {
   const baseClasses = useStyles();
   const optionsList = useMemo(
@@ -90,7 +92,10 @@ export const ToggleButtons = memo<ToggleButtonsProps>(function ToggleButtons({
           label={label}
           onClick={handleClick}
           className={clsx(baseClasses.button, buttonClass, {
-            [clsx(baseClasses.selected, selectedClass)]: value === optionValue,
+            [clsx(
+              buttonType !== 'tab' ? baseClasses.selected : baseClasses.selected2,
+              selectedClass
+            )]: value === optionValue,
           })}
         />
       ))}

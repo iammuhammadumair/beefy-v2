@@ -5,6 +5,8 @@ export const styles = (theme: Theme) => ({
     ...theme.typography['h2'],
     color: theme.palette.text.primary,
     margin: 0,
+    fontWeight: 700,
+    fontSize: '20px',
   },
   subtitle: {
     ...theme.typography['subline-lg'],

@@ -1,8 +1,8 @@
-// import type { Theme } from '@material-ui/core';
+import type { Theme } from '@material-ui/core';
 
-export const styles = () => ({
+export const styles = (theme: Theme) => ({
   container: {
-    // backgroundColor: theme.palette.background.body,
+    backgroundColor: theme.palette.background.body,
     borderRadius: '12px 12px 0 0',
     padding: '24px',
   },

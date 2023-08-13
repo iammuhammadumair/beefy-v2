@@ -16,7 +16,7 @@ export const styles = (theme: Theme) => ({
     ...theme.typography['subline-sm'],
     display: 'flex',
     gap: '8px',
-    color: theme.palette.text.disabled,
+    color: '#6391FF',
   },
   toggleLabelLine: {
     height: '2px',

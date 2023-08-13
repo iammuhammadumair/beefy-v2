@@ -2,7 +2,7 @@ import type { Theme } from '@material-ui/core';
 
 export const styles = (theme: Theme) => ({
   container: {
-    border: 'solid 2px #2D3153',
+    borderBottom: `1px solid ${theme.palette.background.default}`,
     borderRadius: '8px',
     padding: '12px',
   },
@@ -10,10 +10,13 @@ export const styles = (theme: Theme) => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
     gap: '4px',
+    borderBottom: `1px solid ${theme.palette.background.default}`,
+    paddingBottom: theme.spacing(2),
+    // color:'red',
   },
   performanceFees: {
     ...theme.typography['body-sm'],
-    color: theme.palette.text.dark,
+    color: theme.palette.text.primary,
     marginTop: '12px',
   },
   tooltipTrigger: {

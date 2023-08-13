@@ -68,6 +68,19 @@ export const styles = (theme: Theme) => ({
       borderColor: '#2C3154',
     },
   },
+  primary: {
+    color: theme.palette.text.primary,
+    backgroundColor: '#6391FF',
+    borderColor: '#232743',
+    borderRadius: '50px',
+    '&:hover': {
+      color: '#F5F5FF',
+      backgroundColor: '#2C3154',
+      borderColor: '#2C3154',
+    },
+    width: '70%',
+    marginTop: '20px',
+  },
   middle: {
     color: '#F5F5FF',
     backgroundColor: '#2D3153',

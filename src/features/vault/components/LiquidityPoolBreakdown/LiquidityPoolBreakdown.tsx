@@ -61,15 +61,18 @@ export const LiquidityPoolBreakdown = memo<LiquidityPoolBreakdownProps>(
     }, [userBalance, haveSwitchedTab, onTabChange, tab]);
 
     return (
-      <Card>
+      <Card className={classes.container}>
         <CardHeader className={classes.header}>
-          <CardTitle title={'LP Breakdown'} />
-          <ToggleButtons
-            buttonsClass={classes.tabs}
-            options={tabs}
-            onChange={onTabChange}
-            value={tab}
-          />
+          <div className={classes.titleText}>
+            <CardTitle title={'LP Breakdown'} />
+            <ToggleButtons
+              buttonsClass={classes.tabs}
+              options={tabs}
+              onChange={onTabChange}
+              value={tab}
+              buttonType={'tab'}
+            />
+          </div>
         </CardHeader>
         <CardContent disableDefaultClass={true} className={classes.layout}>
           <ChartWithLegend breakdown={calculatedBreakdown} />
