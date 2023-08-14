@@ -114,6 +114,6 @@ export const AssetName = memo<AssetNameProps>(function AssetName({ name }) {
       <Tooltip content={<BasicTooltipContent title={name} />}>{`${name.slice(0, 8)}...`}</Tooltip>
     );
   }
-
-  return <div>{name}</div>;
+  //it will be fixed when moovee api is used
+  return <div>{name.replace('BIFI', 'Moovee')}</div>;
 });
