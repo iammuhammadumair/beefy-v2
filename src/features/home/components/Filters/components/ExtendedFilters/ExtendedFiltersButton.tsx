@@ -27,11 +27,8 @@ export const ExtendedFiltersButton = memo<ExtendedFiltersButtonProps>(
     }, [setIsOpen]);
 
     const handleOpen = useCallback(() => {
-      // console.log('check');
-      // console.log('desktop =>', desktopView);
-
       setIsOpen(true);
-    }, [isOpen]);
+    }, [setIsOpen]);
 
     return (
       <>

@@ -29,7 +29,7 @@ export interface BoostEntity {
 
   /**
    * ASSETS are basically the assets that are in that boost
-   * So if you go into a BIFI vault, the assets is of course only BIFI
+   * So if you go into a Moovee vault, the assets is of course only Moovee
    * But if you join the curve aTriCrypto vault your assets will be BTC,ETH and USDT
    */
   assets: TokenEntity['id'][];

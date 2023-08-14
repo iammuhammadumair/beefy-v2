@@ -32,7 +32,9 @@ const VaultBoostTag = memo<VaultBoostTagProps>(function VaultBoostTag({ boostId 
   const classes = useStyles();
   const { t } = useTranslation();
   const boost = useAppSelector(state => selectBoostById(state, boostId));
+
   const { isOverflowing, ref } = useIsOverflowingHorizontally();
+  console.log('boost.name  =>', boost.name);
 
   return (
     <VaultTagWithTooltip

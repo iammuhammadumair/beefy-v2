@@ -18,6 +18,7 @@ export const Assets = memo<AssetsProps>(function Assets({ chainId }) {
   const { t } = useTranslation();
 
   const assets = useAppSelector(state => selectTreasuryAssetsByChainId(state, chainId));
+  console.log('assets =>', assets);
 
   const { liquidAssets, lockedAssets, stakedAssets } = useSortedAssets(assets);
   const classes = useStyles();
@@ -28,6 +29,8 @@ export const Assets = memo<AssetsProps>(function Assets({ chainId }) {
         <>
           <div className={classes.assetTypes}>{t('Liquid Assets')}</div>
           {liquidAssets.map(token => {
+            console.log('token =>', token.name);
+
             return <AssetInfo key={token.address} chainId={chainId} token={token} />;
           })}
         </>

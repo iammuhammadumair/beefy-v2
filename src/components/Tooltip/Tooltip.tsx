@@ -129,6 +129,7 @@ export const Tooltip = memo(
       // multiple click away listeners don't work well together, only one gets triggered
       return isOpen ? ClickAwayListener : DummyClickAwayListener;
     }, [isOpen]);
+    console.log('content =>', content);
 
     return (
       <ClickAway onClickAway={handleClickAway}>

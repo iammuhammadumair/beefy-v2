@@ -64,7 +64,7 @@ export const Header = memo(function Header() {
           <Toolbar className={classes.content} disableGutters={true}>
             <div className={classes.flex}>
               <Link className={classes.beefy} to="/">
-                <img alt="BIFI" src={isMobile ? headerLogoDesktop : headerLogoDesktop} />
+                <img alt="Moovee" src={isMobile ? headerLogoDesktop : headerLogoDesktop} />
               </Link>
               <Hidden mdDown>
                 <NavItem title={'Header-Vaults'} url="/" Icon={VaultsIcon} />

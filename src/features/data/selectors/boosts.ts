@@ -14,6 +14,10 @@ export const selectBoostById = createCachedSelector(
     if (boostsById[boostId] === undefined) {
       throw new Error(`selectBoostById: Unknown boost id ${boostId}`);
     }
+    console.log('boostsById =>', boostsById);
+    console.log('boostsById =>', boostId);
+    console.log('boostsById =>', boostsById[boostId]?.name);
+
     return boostsById[boostId];
   }
 )((state: BeefyState, boostId: BoostEntity['id']) => boostId);

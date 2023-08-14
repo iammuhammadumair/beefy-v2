@@ -108,7 +108,7 @@ BONUS:
   - Deposit
   - Withdraw
   - Zap
-  - BIFI token price
+  - Moovee token price
 
 # WEIRD STUFF / QUESTIONS
 
@@ -135,7 +135,7 @@ BONUS:
 - why is there an api.beefy.finance and a data.beefy.finance?
   data.beefy.finance is used to query certain historical data. Api returns live results
 - What is a reward?
-  vaults autocompound. so you stake 1 BIFI-BNB, the following day you'll have a bit more of that (1.005 maybe)
+  vaults autocompound. so you stake 1 Moovee-BNB, the following day you'll have a bit more of that (1.005 maybe)
   so vaults just grow your deposit. boosts however give you reward on a different token.
   So a boost could be stake mooBifiBnb, earn ETH.
   rewards refer to the amount of the reward token that you have
@@ -179,7 +179,7 @@ BONUS:
   No, but chebiN is building one
 - can we run unit tests in CI?
   Yes, chebiN will setup
-- On fantom boost moo_boo_ftm-tomb, the "earnedOracleId" is "BIFI", but the "earnedTokenAddress" is "0xbF07093ccd6adFC3dEB259C557b61E94c1F66945" where on fantom, BIFI token address is "0xd6070ae98b8069de6b494332d1a1a81b6179d960". The "earnedTokenAddress" points to the mooFantomBIFI token. Is this normal? what's going on?
+- On fantom boost moo_boo_ftm-tomb, the "earnedOracleId" is "Moovee", but the "earnedTokenAddress" is "0xbF07093ccd6adFC3dEB259C557b61E94c1F66945" where on fantom, Moovee token address is "0xd6070ae98b8069de6b494332d1a1a81b6179d960". The "earnedTokenAddress" points to the mooFantomBIFI token. Is this normal? what's going on?
   It is not.
 - What is "zero" in "sortConfig" => sortConfig.deposited === false && sortConfig.zero === false
   Zero mean "hide zero balance"

@@ -29,7 +29,7 @@ export interface VaultStandard {
 
   /**
    * ASSETS are basically the assets that are in that vault
-   * So if you go into a BIFI vault, the assets is of course only BIFI
+   * So if you go into a Moovee vault, the assets is of course only Moovee
    * But if you join the curve aTriCrypto vault your assets will be BTC,ETH and USDT
    */
   assetIds: TokenEntity['id'][];
@@ -80,7 +80,7 @@ export interface VaultGov {
 
   /**
    * ASSETS are basically the assets that are in that vault
-   * So if you go into a BIFI vault, the assets is of course only BIFI
+   * So if you go into a Moovee vault, the assets is of course only Moovee
    * But if you join the curve aTriCrypto vault your assets will be BTC,ETH and USDT
    */
   assetIds: TokenEntity['id'][];
@@ -97,10 +97,10 @@ export interface VaultGov {
   /**
    * so bifi-gov and bifi-maxi, are very special
    * those are the way in which we distribute platform revenue back to bifi holders
-   * bifi-gov is stake BIFI earn NATIVE (gas token) without autocompounding
-   * bifi-maxi is stake BIFI earn BIFI with autocompounding
+   * bifi-gov is stake Moovee earn NATIVE (gas token) without autocompounding
+   * bifi-maxi is stake Moovee earn Moovee with autocompounding
    * bifi-maxi basically uses bifi-gov underneath
-   * so all the money in BIFI-MAXI is actually inside the BIFI-GOV of that chain
+   * so all the money in Moovee-MAXI is actually inside the Moovee-GOV of that chain
    * so in order not to count TVL twice. when we count the tvl of the gov pools
    * we must exclude/substract the tvl from the maxi vault
    */
