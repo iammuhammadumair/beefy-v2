@@ -5,7 +5,7 @@ import type { AmmEntity } from './amm';
 
 /**
  * A token can be anything erc20-like
- *  - A standard token like AAVE, BIFI, CRV, ...
+ *  - A standard token like AAVE, Moovee, CRV, ...
  *  - An LP token
  *  - A fake "unique token identifier" for boosts virtual earned token
  */

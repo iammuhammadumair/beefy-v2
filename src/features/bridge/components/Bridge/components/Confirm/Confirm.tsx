@@ -152,7 +152,7 @@ function _Confirm() {
               />
               <div className={classes.networkName}>{fromChain.name}</div>
             </div>
-            <div className={classes.amount}>- {formState.formattedInput} BIFI</div>
+            <div className={classes.amount}>- {formState.formattedInput} Moovee</div>
           </div>
           <div className={classes.address}>
             {t('Address')}: <span>{formatAddressShort(walletAddress)}</span>
@@ -172,7 +172,7 @@ function _Confirm() {
               />
               <div className={classes.networkName}>{destChain.name}</div>
             </div>
-            <div className={classes.amount}>+ {formState.formattedOutput} BIFI</div>
+            <div className={classes.amount}>+ {formState.formattedOutput} Moovee</div>
           </div>
           <div className={classes.address}>
             {t('Address')}: <span>{formatAddressShort(walletAddress)}</span>
@@ -214,7 +214,7 @@ function _Confirm() {
       </div>
       <div className={classes.transferDetails}>
         <ItemInfo title={t('Bridge-Crosschain')}>{destChainData.SwapFeeRatePerMillion}%</ItemInfo>
-        <ItemInfo title={t('Bridge-Gas')}> {destChainData.MinimumSwapFee} BIFI</ItemInfo>
+        <ItemInfo title={t('Bridge-Gas')}> {destChainData.MinimumSwapFee} Moovee</ItemInfo>
         <ItemInfo title={t('Bridge-EstimatedTime')}>3 - 30 min</ItemInfo>
       </div>
     </>

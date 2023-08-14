@@ -13,6 +13,9 @@ const keyToUrl = createGlobLoader(pathToUrl, path => {
 
 export function getSingleAssetSrc(symbol: TokenEntity['id'], chainId?: ChainEntity['id']) {
   const parsedSymbol = symbol.replace('.', '');
+  console.info('parsedSymbol =>', parsedSymbol);
+  console.info('chainId =>', chainId);
+
   const ids = chainId ? [`${chainId}/${parsedSymbol}`, parsedSymbol] : [parsedSymbol];
 
   return keyToUrl(ids);

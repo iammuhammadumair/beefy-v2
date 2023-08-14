@@ -16,7 +16,7 @@ import { formatDistance } from 'date-fns';
 import copperCoin from '../../../../images/icons/copper_coin_fill.svg';
 import presentationFill from '../../../../images/icons/presentation_2_fill.svg';
 import calendarFill from '../../../../images/icons/calendar_fill.svg';
-import currencyDollar from '../../../../images/icons/currency_dollar_fill.png';
+// import currencyDollar from '../../../../images/icons/currency_dollar_fill.png';
 
 const useStyles = makeStyles(styles);
 
@@ -71,9 +71,9 @@ function VaultsStatsComponent({ vaultId }: { vaultId: VaultEntity['id'] }) {
                 <VaultDeposited vaultId={vaultId} />
               </Box>
 
-              <div className={classes.icon2}>
+              {/* <div className={classes.icon2}>
                 <img src={currencyDollar} alt="icon" />
-              </div>
+              </div> */}
             </div>
           </Grid>
           {(isGovVault(vault) || lastHarvestStr !== 'never') && (

@@ -109,13 +109,13 @@ function _Preview() {
           <div className={classes.rowDirectionBalance}>
             <div className={classes.label}>{t('FROM')}</div>
             <div onClick={handleMax} className={classes.balance}>
-              {t('Balance')}: <span>{formatBigDecimals(bifiBalance, 4)} BIFI</span>
+              {t('Balance')}: <span>{formatBigDecimals(bifiBalance, 4)} Moovee</span>
             </div>
           </div>
           <div className={classes.inputContainer}>
             <Paper component="form">
               <div className={classes.inputLogo}>
-                <AssetsImage chainId={'56'} assetIds={['BIFI']} size={24} />
+                <AssetsImage chainId={'56'} assetIds={['Moovee']} size={24} />
               </div>
               <InputBase
                 placeholder="0.00"
@@ -139,7 +139,7 @@ function _Preview() {
           <div className={classes.inputContainer}>
             <Paper component="form">
               <div className={classes.inputLogo}>
-                <AssetsImage chainId={'56'} assetIds={['BIFI']} size={24} />
+                <AssetsImage chainId={'56'} assetIds={['Moovee']} size={24} />
               </div>
               <InputBase
                 placeholder="0.00"

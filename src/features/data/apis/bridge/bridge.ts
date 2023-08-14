@@ -21,8 +21,10 @@ export class BridgeApi {
   ): Promise<BridgeInfoEntity> {
     const res: FetchBridgeDataResult = await this.api.get(`/merge/tokenlist/${networkChainId}`);
     const data = Object.values(res.data).filter(
-      (token: BridgeInfoEntity) => token.symbol === 'BIFI'
+      (token: BridgeInfoEntity) => token.symbol === 'Moovee'
     )[0];
+    console.log('getBridgeChainData =>', data);
+
     return data;
   }
 

@@ -90,7 +90,7 @@ interface LPidentityProps {
 }
 
 export const LPidentity = memo<LPidentityProps>(function LPidentity({ chainId, name }) {
-  const regex = / .*?LP/g; // THIS REGEX WILL MATCH space + any chars/nothing  + "LP", for example BIFI-ETH JLP will return BIFI-ETH
+  const regex = / .*?LP/g; // THIS REGEX WILL MATCH space + any chars/nothing  + "LP", for example Moovee-ETH JLP will return Moovee-ETH
   const assets = name.replace(regex, '').split('-');
 
   return (
@@ -114,6 +114,6 @@ export const AssetName = memo<AssetNameProps>(function AssetName({ name }) {
       <Tooltip content={<BasicTooltipContent title={name} />}>{`${name.slice(0, 8)}...`}</Tooltip>
     );
   }
-
-  return <div>{name}</div>;
+  //it will be fixed when moovee api is used
+  return <div>{name.replace('BIFI', 'Moovee')}</div>;
 });

@@ -35,13 +35,13 @@ function _FeesInfo() {
             <Item title={t('Bridge-Crosschain')}>{destChainData.SwapFeeRatePerMillion}%</Item>
 
             {/*Gas fee */}
-            <Item title={t('Bridge-Gas')}> {destChainData.MinimumSwapFee} BIFI</Item>
+            <Item title={t('Bridge-Gas')}> {destChainData.MinimumSwapFee} Moovee</Item>
 
             {/* Min Amount */}
-            <Item title={t('Bridge-MinAmount')}> {destChainData.MinimumSwap} BIFI</Item>
+            <Item title={t('Bridge-MinAmount')}> {destChainData.MinimumSwap} Moovee</Item>
 
             {/* Max Amount */}
-            <Item title={t('Bridge-MaxAmount')}>{destChainData.MaximumSwap} BIFI</Item>
+            <Item title={t('Bridge-MaxAmount')}>{destChainData.MaximumSwap} Moovee</Item>
           </div>
           <div className={classes.advice}>
             <p>{t('Bridge-Advice-1')}</p>

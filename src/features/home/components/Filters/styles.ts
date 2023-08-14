@@ -48,6 +48,9 @@ export const styles = (theme: Theme) => ({
   platforms: {},
   extended: {},
   clear: {},
+  btnFilter: {
+    padding: '0px',
+  },
   button: {
     width: 'auto',
     flexBasis: 'calc(50% - 8px)',

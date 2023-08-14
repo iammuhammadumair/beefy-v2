@@ -143,7 +143,7 @@ export const selectIsTokenStable = createCachedSelector(
 )((state: BeefyState, chainId: ChainEntity['id'], tokenId: TokenEntity['id']) => tokenId);
 
 export const selectIsBeefyToken = (_: BeefyState, tokenId: TokenEntity['id']) => {
-  return ['BIFI', 'POTS', 'beFTM', 'beQI', 'beJOE', 'binSPIRIT', 'beVELO', 'beOPX'].includes(
+  return ['Moovee', 'POTS', 'beFTM', 'beQI', 'beJOE', 'binSPIRIT', 'beVELO', 'beOPX'].includes(
     tokenId
   );
 };

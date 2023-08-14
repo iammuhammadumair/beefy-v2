@@ -4,12 +4,12 @@ import type { BoostConfig, VaultConfig } from '../apis/config-types';
 
 /**
  * let tokenId = apiBoost.earnedOracleId;
-  // for convenience, the config puts "BIFI" as oracle token of all mooXBIFI
+  // for convenience, the config puts "Moovee" as oracle token of all mooXBIFI
   // but we need to distinguish those tokens
   if (
-    tokenId === 'BIFI' &&
+    tokenId === "Moovee" &&
     apiBoost.earnedToken.startsWith('moo') &&
-    apiBoost.earnedToken.endsWith('BIFI')
+    apiBoost.earnedToken.endsWith("Moovee")
   ) {
     tokenId = apiBoost.earnedToken;
   }

@@ -18,7 +18,7 @@ export const DepositBuyLinks = memo<DepositBuyLinksProps>(function DepositBuyLin
   const { t } = useTranslation();
   const vaultId = useAppSelector(selectTransactVaultId);
   const vault = useAppSelector(state => selectVaultById(state, vaultId));
-  const hasLinks = vault.buyTokenUrl || vault.addLiquidityUrl || vault.assetIds.includes('BIFI');
+  const hasLinks = vault.buyTokenUrl || vault.addLiquidityUrl || vault.assetIds.includes('Moovee');
 
   if (!hasLinks) {
     return null;
@@ -30,7 +30,7 @@ export const DepositBuyLinks = memo<DepositBuyLinksProps>(function DepositBuyLin
       {vault.addLiquidityUrl && (
         <LinkButton href={vault.addLiquidityUrl} text={t('Transact-AddLiquidity')} />
       )}
-      {/* {vault.assetIds.includes('BIFI') && (
+      {/* {vault.assetIds.includes("Moovee") && (
         <Link to="/bridge" className={classes.btnSecondary}>
           {t('Header-BridgeBifi')}
         </Link>
