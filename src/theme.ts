@@ -137,6 +137,7 @@ const theme = createTheme(
         },
         vaults: {
           default: '#2D3153',
+
           defaultOutline: 'rgba(255, 255, 255, 1)',
           // defaultOutline: '#363B63',
           defaultThirdColor: '#353F51',
